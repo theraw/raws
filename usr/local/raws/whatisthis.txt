@@ -1,1 +1,5 @@
 There Are Some Scripts. Which Raws Project Will Call When You Will Try To Install Something.
+
+Ubuntu/ - Scripts For Ubuntu 14.04
+CentOS/ - Scripts For CentOS 7.X
+Debian/ - Scripts For Debian 7.X
