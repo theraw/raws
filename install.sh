@@ -1,5 +1,4 @@
 #!/bin/bash
-rm -Rf /opt/steamcmd/
 case "`lsb_release -is`" in
 
      Ubuntu)
