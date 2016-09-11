@@ -1,3 +1,6 @@
 #!/bin/bash
 # Author RAW A.K.A Jasht'sSerie.
 # This is an open source project, and you can contribute anytime.
+
+d=/usr/local/raws/ubuntu/
+. $d/rv.sh
