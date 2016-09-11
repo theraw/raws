@@ -4,7 +4,7 @@ case "`lsb_release -is`" in
 
      Ubuntu)
              apt-get update; apt-get upgrade -y
-             apt-get install ruby git nano curl zip unzip -y
+             apt-get install lshw ruby git nano curl zip unzip -y
              cd /opt
              wget https://github.com/busyloop/lolcat/archive/master.zip
              unzip master.zip
