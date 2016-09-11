@@ -4,3 +4,4 @@
 
 d=/usr/local/raws/ubuntu/
 . $d/rv.sh
+. $d/si.sh
