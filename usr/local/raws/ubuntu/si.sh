@@ -12,10 +12,12 @@ x=$(cat ~/x.txt)
 cpu=$(grep -c processor /proc/cpuinfo)
 
 echo -n "|-------------------------------------------|" | lolcat -a -s 100
+echo -n "|**********|       ~SYSTEM~      |**********|" | lolcat -a -s 100
+echo -n "|*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*|" | lolcat -a -s 100
 echo -n "|**********| You Are Using.      |**********|" | lolcat -a -s 100
 echo -n "|**********| $distro. |**********|" | lolcat -a -s 100
 echo -n "|**********| $x.             |**********|" | lolcat -a -s 100
-echo -n "|**********| With : $cpu CPU/s.             |**********|" | lolcat -a -s 100
+echo -n "|**********| With : $cpu CPU/s.     |**********|" | lolcat -a -s 100
 echo -n "|-------------------------------------------|" | lolcat -a -s 100
 
 
