@@ -17,10 +17,10 @@ ram=$(grep MemTotal /proc/meminfo | awk '{print $2}' | xargs -I {} echo "scale=4
 ck=$(cat ~/mhz.txt)
 ip=$(curl -s https://api.ipify.org)
 cd /usr/local/raws/ubuntu/
-echo -n "We Are Testing Your Internet Speed Please Wait..." | lolcat -a -s 100; ./st.py > ~/speed.txt; echo "Done.";
+echo -n "We Are Testing Your Internet Speed Please Wait..." | lolcat -a -s 100; ./st.py > ~/speed.txt; echo "Done." | lolcat -a -s 100;
 up=$(egrep "Upload:" ~/speed.txt)
 down=$(egrep "Download" ~/speed.txt)
-
+clear
 echo -n "|-------------------------------------------|" | lolcat -a -s 100
 echo -n "|**********|       ~SYSTEM~      |**********|" | lolcat -a -s 100
 echo -n "|*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*|" | lolcat -a -s 100
@@ -36,8 +36,8 @@ echo -n "|**********|      ~NETWORK~      |**********|" | lolcat -a -s 100
 echo -n "|*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*|" | lolcat -a -s 100
 echo -n "|**********| IP : $ip |*********|" | lolcat -a -s 100
 echo -n "|**********| $up |********|" | lolcat -a -s 100
-echo -n "|**********| $down |*******|" | lolcat -a -s 100
-
+echo -n "|**********| $down |******|" | lolcat -a -s 100
+echo -n "|-------------------------------------------|" | lolcat -a -s 1
 #Clear.
 rm -Rf ~/x.txt
 rm -Rf ~/mhz.txt
