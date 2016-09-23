@@ -11,7 +11,19 @@ case "`lsb_release -is`" in
              rm -Rf master.zip
              cd lolcat-master/
              gem install lolcat
-             wget 
+             cd /bin
+             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/bin/ubuntu/raws
+             chmod +x raws
+             clear
+             cd /usr/local
+             mkdir raws/
+             cd raws/
+             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/rv.sh
+             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/st.py
+             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/si.sh
+             chmod +x *
+             clear
+             raws -v
      ;;
      CentOS)
              yum -y update
