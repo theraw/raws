@@ -18,6 +18,8 @@ case "`lsb_release -is`" in
              cd /usr/local
              mkdir raws/
              cd raws/
+             mkdir ubuntu/
+             cd ubuntu/
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/rv.sh
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/st.py
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/si.sh
