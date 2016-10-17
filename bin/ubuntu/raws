@@ -6,3 +6,4 @@ d=/usr/local/raws/ubuntu/
 . $d/rv.sh
 . $d/si.sh
 . $d/install-apache2.sh
+. $d/ahost.sh
