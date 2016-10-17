@@ -1,5 +1,6 @@
 #!/bin/bash
-#Ahost is to host one domain in your vps. Of Course for personal usage!
+# Ahost is to host one domain in your vps. Of Course for personal usage!
+# Ex. raws ahost example.com
 
 if [ "$1" == "ahost" ] && [ "$2" ]; then
    mkdir /tmp
