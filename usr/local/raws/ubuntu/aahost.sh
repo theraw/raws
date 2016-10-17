@@ -1,6 +1,6 @@
 #!/bin/bash
 # AAHOST - Advanced Apache Host.
-# Which does mean this domin which you will hosted can be used by a non owner of your vps. 
+# Which does mean this domin which will hosted can be used by a non owner of your vps. 
 # In the end of this you will have domain hosted, And 1 User allowed to connect only the domain directory with ftp on port 21!
 # SSH Access Will be disabled. You'll need to give to this manually or delete line ** from this bash script!
 # $2 domain name // $3 username // $4 userpassword.
