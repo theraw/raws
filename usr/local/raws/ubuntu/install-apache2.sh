@@ -1,6 +1,8 @@
 #!/bin/bash
+#Simple installation of apache2, php5 and some php modules.
+if [[ "$1" == 'iapache' ]]; then
 mkdir /tmp
-
+clear
 echo -n "Updating System..." | lolcat -a -s 100; apt-get update -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
 echo -n "Ugrading System..." | lolcat -a -s 100; apt-get upgrade -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
 
@@ -22,7 +24,7 @@ m='
 '
 echo "$m" >> /etc/apache2/apache2.conf
 echo -n "Restarting Apache2..." | lolcat -a -s 100; service apache2 restart >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
-echo -n "Installation Has END."
+echo -n "Installation Has END." | lolcat -a -s 100;
 sleep 3
 clear
 echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
@@ -34,3 +36,4 @@ echo -n "*-*-*-*Installation log /tmp/out.txt **-*-*" | lolcat -a -s 100;
 echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
 echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
 sleep 3
+fi
