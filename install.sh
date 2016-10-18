@@ -24,6 +24,7 @@ case "`lsb_release -is`" in
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/st.py
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/si.sh
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/install-apache2.sh
+             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/ahost.sh
              chmod +x *
              clear
              raws -v
