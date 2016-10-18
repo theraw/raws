@@ -6,8 +6,9 @@ case "`lsb_release -is`" in
           sed -ri 's/Release://g' ~/rl.txt
           sed -ri 's/   //g' ~/rl.txt
           vr=$(cat ~/rl.txt)
+          vx=$(lsb_release -r)
 
-          if [ "$vr" == "14.04" ]; then
+          if [ "$vx" == "Release:	14.04" ]; then
           
              apt-get update; apt-get upgrade -y
              apt-get install lshw ruby git nano curl zip unzip python -y
