@@ -1,8 +1,14 @@
 #!/bin/bash
-
 case "`lsb_release -is`" in
-
      Ubuntu)
+          rm -Rf ~/rl.txt
+          lsb_release -r >> ~/rl.txt
+          sed -ri 's/Release://g' ~/rl.txt
+          sed -ri 's/   //g' ~/rl.txt
+          vr=$(cat ~/rl.txt)
+
+          if [ "$vr" == "14.04" ]; then
+          
              apt-get update; apt-get upgrade -y
              apt-get install lshw ruby git nano curl zip unzip python -y
              cd /opt
@@ -28,6 +34,10 @@ case "`lsb_release -is`" in
              chmod +x *
              clear
              raws -v
+              
+          else
+              echo "I'm Sorry We Don't Support Ubuntu $vr !"
+          fi
      ;;
      CentOS)
              yum -y update
