@@ -39,6 +39,8 @@ case "`lsb_release -is`" in
           else
               echo "I'm Sorry We Don't Support Ubuntu $vr !"
           fi
+          rm -Rf ~/rl.txt
+          rm -Rf ~/install.sh
      ;;
      CentOS)
              yum -y update
