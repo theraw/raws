@@ -7,3 +7,4 @@ d=/usr/local/raws/ubuntu/
 . $d/si.sh
 . $d/install-apache2.sh
 . $d/ahost.sh
+. /usr/local/raws/check.sh
