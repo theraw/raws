@@ -17,6 +17,7 @@ echo -e "||==========================================================||" | lolca
 echo -e "||==========================================================||" | lolcat -a -s 100;
 echo -e "||=====================!INFORMATIONS!=======================||" | lolcat -a -s 100;
 echo -e "||= 1. $ raws help         || Watch this output!"                    | lolcat -a -s 100;
+echo -e "||= 1. $ raws info         || Show Env Infos"                        | lolcat -a -s 100;
 echo -e "||= 1. $ raws sysinfo      || Show system info"                      | lolcat -a -s 100;
 echo -e "||==========================================================||" | lolcat -a -s 100;
 echo -e "||====================!INSTALLATIONS!=======================||" | lolcat -a -s 100;
