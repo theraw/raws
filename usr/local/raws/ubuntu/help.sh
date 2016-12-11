@@ -20,8 +20,8 @@ echo -e "||= 1. $ raws help         || Watch this output!"                    | 
 echo -e "||= 1. $ raws sysinfo      || Show system info"                      | lolcat -a -s 100;
 echo -e "||==========================================================||" | lolcat -a -s 100;
 echo -e "||====================!INSTALLATIONS!=======================||" | lolcat -a -s 100;
-echo -e "||= 2. $ raws iapache      || Install apache2 and php5"              | lolcat -a -s 100;
-echo -e "||= 3. $ raws inginx       || Install nginx"                         | lolcat -a -s 100;
+echo -e "||= 2. $ raws iapache      || Install Apache2 and Php5"              | lolcat -a -s 100;
+echo -e "||= 3. $ raws inginx       || Install Nginx and Php5-Fpm"            | lolcat -a -s 100;
 echo -e "||==========================================================||" | lolcat -a -s 100;
 echo -e "||======================!VIRTUALHOSTS!======================||" | lolcat -a -s 100;
 echo -e "||= 4. $ raws ahost ex.com || Create virtualhost with Apache"   | lolcat -a -s 100;
