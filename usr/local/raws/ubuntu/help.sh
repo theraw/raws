@@ -1,5 +1,5 @@
 #!/bin/bash
-function helpme {
+helpme() {
 clear
 echo -e ""
 echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
