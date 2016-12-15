@@ -5,8 +5,7 @@
 if [ "$1" == "ahost" ] && [ "$2" ]; then
    mkdir /tmp
    clear
-   echo -n "Updating System..." | lolcat -a -s 100; apt-get update -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
-   echo -n "Ugrading System..." | lolcat -a -s 100; apt-get upgrade -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
+   echo -n "Starting..." | lolcat -a -s 100;
    
    mkdir /hostdata/$2
    mkdir /hostdata/$2/public_html
