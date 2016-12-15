@@ -13,8 +13,9 @@ echo -n "Restarting Apache..." | lolcat -a -s 100; service apache2 restart >> /t
 clear
 echo -n "Work Done (:" | lolcat -a -s 100;
 echo -n "You maybe like GUI MYSQL? Do 'apt-get install phpmyadmin; service apache2 restart' and visit IP/phpmyadmin" | lolcat -a -s 100;
+echo -n "Username is root and password is that which you will wrote on installation steps of phpmyadmin!" | lolcat -a -s 100;
 else 
-   echo "Please Use This Command As Root!, You can do "sudo -i" to switch to root and re'run command :)" | lolcat -a -s 100
+   echo "Please Use This Command As Root!, You can do "sudo -i" to switch to root and re'run command :)" | lolcat -a -s 100;
 fi
 }
 if [[ "$1" == 'imysql' ]]; then
