@@ -9,3 +9,4 @@ d=/usr/local/raws/ubuntu
 . $d/install-apache2.sh
 . $d/ahost.sh
 . $d/help.sh
+. $d/imysql.sh
