@@ -39,8 +39,8 @@ EOF
    clear
    echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
    echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
-   echo -n "*-*-*-* Domain : $2 *-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
-   echo -n "*-*-*-* Dir : /hostdata/$2/public_html **-*" | lolcat -a -s 100;
+   echo -n " Domain : $2 " | lolcat -a -s 100;
+   echo -n " Dir : /hostdata/$2/public_html " | lolcat -a -s 100;
    echo -n " Visit http://$2 To verify the work." | lolcat -a -s 100;
    echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
    echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
