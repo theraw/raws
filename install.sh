@@ -32,6 +32,7 @@ case "`lsb_release -is`" in
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/si.sh
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/install-apache2.sh
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/ahost.sh
+             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/help.sh
              chmod +x *
              cd /usr/local/raws/
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/check.sh
