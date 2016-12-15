@@ -2,9 +2,10 @@
 # Author RAW A.K.A Jasht'sSerie.
 # This is an open source project, and you can contribute anytime.
 
-d=/usr/local/raws/ubuntu/
+d=/usr/local/raws/ubuntu
+. /usr/local/raws/check.sh
 . $d/rv.sh
 . $d/si.sh
 . $d/install-apache2.sh
 . $d/ahost.sh
-. /usr/local/raws/check.sh
+. $d/help.sh
