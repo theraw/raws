@@ -8,6 +8,7 @@ if [ "$1" == "ahost" ] && [ "$2" ]; then
    echo -n "Starting..." | lolcat -a -s 100;
    
    mkdir /hostdata/$2
+   mkdir /hostdata/$2/logs
    mkdir /hostdata/$2/public_html
    echo "<html><h1><center>WELCOME!</center></h1></html>" >> /hostdata/$2/public_html/index.html
    echo "<html><h1><center>Not Found!</center></h1></html>" >> /hostdata/$2/public_html/404.html
@@ -20,8 +21,8 @@ cat <<EOF > /etc/apache2/sites-available/$2.conf
    ServerName $2
    ServerAlias www.$2
    DocumentRoot /hostdata/$2/public_html
-   ErrorLog ${APACHE_LOG_DIR}/error.log
-   CustomLog ${APACHE_LOG_DIR}/access.log combined
+   ErrorLog /hostdata/$2/logs/error.log
+   CustomLog /hostdata/$2/logs/access.log combined
    <Directory /hostdata/$2/public_html>
                 Options Indexes FollowSymLinks MultiViews
                 AllowOverride All
