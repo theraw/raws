@@ -7,9 +7,9 @@ if [ "$1" == "ahost" ] && [ "$2" ]; then
    clear
    echo -n "Starting..." | lolcat -a -s 100;
    
-   mkdir /hostdata/$2
-   mkdir /hostdata/$2/logs
-   mkdir /hostdata/$2/public_html
+   mkdir -p /hostdata/$2
+   mkdir -p /hostdata/$2/logs
+   mkdir -p /hostdata/$2/public_html
    echo "<html><h1><center>WELCOME!</center></h1></html>" >> /hostdata/$2/public_html/index.html
    echo "<html><h1><center>Not Found!</center></h1></html>" >> /hostdata/$2/public_html/404.html
    echo "ErrorDocument 404 /404.html" >> /hostdata/$2/public_html/.htaccess
