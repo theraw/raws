@@ -3,7 +3,7 @@
 # Ex. raws ahost example.com
 
 if [ "$1" == "ahost" ] && [ "$2" ]; then
-   mkdir /tmp
+   mkdir -p /tmp
    clear
    echo -n "Starting..." | lolcat -a -s 100;
    
