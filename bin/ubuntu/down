@@ -1,0 +1,4 @@
+if [ "$1" ]; then
+echo "AFTER 'Deleting original file...' HIT ENTER TO END PROCESS!"
+echo "`youtube-dl --extract-audio --audio-format mp3 $1`\n"
+fi
