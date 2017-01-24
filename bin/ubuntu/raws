@@ -10,3 +10,4 @@ d=/usr/local/raws/ubuntu
 . $d/ahost.sh
 . $d/help.sh
 . $d/imysql.sh
+. $d/yt.sh
