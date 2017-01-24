@@ -1,0 +1,61 @@
+#!/bin/bash
+installx(){
+#Update System.
+apt-get update -y
+apt-get upgrade -y
+#Required's.
+apt-get install -y nano gcc make zip unzip build-essential screen pkg-config libxml2-dev icecast2 ezstream
+
+#Req.
+mkdir ~/dfiles
+cd ~/dfiles/
+wget http://downloads.xiph.org/releases/ogg/libogg-1.3.2.zip
+wget http://downloads.xiph.org/releases/vorbis/libvorbis-1.3.5.zip
+wget http://downloads.xiph.org/releases/libshout/libshout-2.4.1.tar.gz
+
+#Unzip Folders.
+cd ~/dfiles/
+unzip libogg-1.3.2.zip
+unzip libvorbis-1.3.5.zip
+tar xf libshout-2.4.1.tar.gz
+cd ~/
+
+#Install Libogg.
+cd ~/dfiles/libogg-1.3.2
+./configure
+make && make install
+
+#Install LibVorbis.
+cd ~/dfiles/libvorbis-1.3.5
+./configure
+make && make install
+
+#Install Libshout.
+cd ~/dfiles/libshout-2.4.1
+./configure
+make && make install
+#Clear.
+cd ~/
+rm -Rf ~/dfiles/
+apt-get update -y; apt-get upgrade -y; clear;
+apt-get install youtube-dl -y
+clear
+sudo apt-get remove -y youtube-dl
+sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl
+clear
+sudo chmod a+x /usr/local/bin/youtube-dl
+hash -r
+apt-mark showauto | xargs sudo apt-get install
+rm -Rf ~/ytdl.sh
+cd /bin/
+wget https://raw.githubusercontent.com/systemroot/raws-dev/master/bin/ubuntu/down
+chmod +x /bin/down
+clear
+echo "Work Done!"
+echo "To download a song in .mp3 from youtube use this command like"
+echo "down https://www.youtube.com/watch?v=B9abQVteCtU"
+echo "~~~~~~"
+}
+if [ "$1" == 'iyt' ]; then
+   installx
+fi
