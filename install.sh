@@ -11,7 +11,7 @@ case "`lsb_release -is`" in
           if [ "$vx" == "Release:	14.04" ]; then
           
              apt-get update; apt-get upgrade -y
-             apt-get install lshw ruby git nano curl zip unzip python -y
+             apt-get install build-essential lshw ruby git nano curl zip unzip python -y
              cd /opt
              wget https://github.com/busyloop/lolcat/archive/master.zip
              unzip master.zip
@@ -35,6 +35,7 @@ case "`lsb_release -is`" in
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/help.sh
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/imysql.sh
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/yt.sh
+             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/bye.sh
              chmod +x *
              cd /usr/local/raws/
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/check.sh
