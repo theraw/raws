@@ -49,10 +49,11 @@ case "`lsb_release -is`" in
           rm -Rf ~/install.sh
      ;;
      CentOS)
-             yum -y update
-             yum -y upgrade
+             echo "Comgins Soon"
+             exit
      ;;
      Debian)
-             apt-get update; apt-get upgrade -y
+             echo "Comgins Soon"
+             exit
      ;;
 esac
