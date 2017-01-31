@@ -50,11 +50,11 @@ case "`lsb_release -is`" in
           rm -Rf ~/install.sh
      ;;
      CentOS)
-             echo "Comgin Soon"
+             echo "Coming Soon"
              exit
      ;;
      Debian)
-             echo "Comgin Soon"
+             echo "Coming Soon"
              exit
      ;;
 esac
