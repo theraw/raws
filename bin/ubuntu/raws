@@ -12,3 +12,4 @@ d=/usr/local/raws/ubuntu
 . $d/imysql.sh
 . $d/yt.sh
 . $d/bye.sh
+. $d/update.sh
