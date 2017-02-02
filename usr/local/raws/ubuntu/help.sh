@@ -25,6 +25,7 @@ echo -e "||====================!INSTALLATIONS!=======================||" | lolca
 echo -e "||= 1. $ raws iapache      || Install Apache2 and Php5"              | lolcat -a -s 100;
 echo -e "||= 2. $ raws inginx       || Install Nginx and Php5-Fpm"            | lolcat -a -s 100;
 echo -e "||= 3. $ raws imysql       || Install MySql Server"                  | lolcat -a -s 100;
+echo -e "||= 4. $ raws iyt          || Install youtube-dl"                    | lolcat -a -s 100;
 echo -e "||==========================================================||" | lolcat -a -s 100;
 echo -e "||======================!VIRTUALHOSTS!======================||" | lolcat -a -s 100;
 echo -e "||= 1. $ raws ahost ex.com || Create virtualhost with Apache"   | lolcat -a -s 100;
