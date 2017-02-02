@@ -1,6 +1,7 @@
 bye(){
 rm -Rf /usr/local/raws
 rm -Rf /bin/raws
+rm -Rf /opt/lolcat*
 }
 if [[ "$1" == 'bye' ]]; then
     clear
