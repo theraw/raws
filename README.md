@@ -8,3 +8,7 @@
 **3.** **``$ raws help``**
 
 **I Haven't end work with all commands which you can see on help!**
+
+#New.
+
+1. Fixed `raws update`
