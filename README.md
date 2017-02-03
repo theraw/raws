@@ -17,3 +17,8 @@
 **`down https://www.youtube.com/watch?v=BuJtLePAcGw`**
 
 3. Fixed **`raws info`**
+
+
+#in proccess.
+
+1. Fixing check mode when you version is out, problem is because you will not be able to read alert!
