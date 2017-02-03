@@ -1,6 +1,6 @@
 #!/bin/bash
 curl -s 'https://raw.githubusercontent.com/systemroot/raws-dev/master/releases' > /tmp/rv.txt
-if [[ "`cat /tmp/rv.txt`" == '0.5' ]]; then
+if [[ "`cat /tmp/rv.txt`" == '0.6' ]]; then
        rm -Rf /tmp/rv.txt
    else
       sleep 3
