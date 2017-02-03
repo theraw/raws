@@ -3,7 +3,7 @@ curl -s 'https://raw.githubusercontent.com/systemroot/raws-dev/master/releases' 
 if [[ "`cat /tmp/rv.txt`" == '0.6' ]]; then
        rm -Rf /tmp/rv.txt
    else
-      sleep 10
       echo "If you can read this then you like to use raws cli, so to get latest update" | lolcat -a -s 100
       echo "please execute 'raws update' because a new version is out!!" | lolcat -a -s 100
+      sleep 10
 fi
