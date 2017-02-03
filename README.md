@@ -21,4 +21,4 @@
 
 #in proccess.
 
-1. Fixing check mode when new version is out, problem is because you will not be able to read alert!
+1. ~~Fixing check mode when new version is out, problem is because you will not be able to read alert!~~ **Done.**
