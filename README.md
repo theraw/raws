@@ -22,3 +22,13 @@
 #in proccess.
 
 1. ~~Fixing check mode when new version is out, problem is because you will not be able to read alert!~~ **Done.**
+
+#How to remove.
+Old version 0.5 was something like beta. 
+so on that wasn't "raws bye" ready yet so you need to delete it manually like
+
+**1.** **``$ rm -Rf /usr/local/raws; rm -Rf /bin/raws; rm -Rf /opt/lolcat*``**
+
+For version 0.6 and +, you can simply do
+
+**1.** **``$ raws bye``**
