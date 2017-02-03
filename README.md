@@ -15,3 +15,5 @@
 
 2. ADD, **`raws iyt`** which allow you to download and convert yt videos on .mp3 it's very simple 
 **`down https://www.youtube.com/watch?v=BuJtLePAcGw`**
+
+3. Fixed **`raws info`**
