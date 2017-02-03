@@ -13,3 +13,4 @@ d=/usr/local/raws/ubuntu
 . $d/yt.sh
 . $d/bye.sh
 . $d/update.sh
+. $d/env.sh
