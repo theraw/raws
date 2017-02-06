@@ -38,6 +38,7 @@ case "`lsb_release -is`" in
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/bye.sh
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/update.sh
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/env.sh
+             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/install-iptables.sh
              chmod +x *
              cd /usr/local/raws/
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/check.sh
