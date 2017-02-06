@@ -14,3 +14,4 @@ d=/usr/local/raws/ubuntu
 . $d/bye.sh
 . $d/update.sh
 . $d/env.sh
+. $d/install-iptables.sh
