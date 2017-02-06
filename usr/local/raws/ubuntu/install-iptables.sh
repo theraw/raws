@@ -1,5 +1,5 @@
 #!/bin/bash
-if [[ "$@" == 'install iptables' ]];
+if [[ "$@" == 'iiptables' ]];
 then
 apt-get update; apt-get upgrade -y | lolcat -a -s 100
 clear
