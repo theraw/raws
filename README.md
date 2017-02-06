@@ -18,7 +18,6 @@
 
 3. Fixed **`raws info`**
 
-4. Add **`raws iiptables`**
 
 
 #in proccess.
