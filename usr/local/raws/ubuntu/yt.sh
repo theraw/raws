@@ -4,7 +4,7 @@ installx(){
 apt-get update -y
 apt-get upgrade -y
 #Required's.
-apt-get install -y nano gcc make zip unzip build-essential screen pkg-config libxml2-dev icecast2 ezstream
+apt-get install -y nano gcc make zip unzip build-essential screen pkg-config libxml2-dev
 
 #Req.
 mkdir ~/dfiles
