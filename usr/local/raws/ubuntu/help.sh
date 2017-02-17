@@ -15,7 +15,7 @@ echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
 echo -e ""
 echo -e "||==========================================================||" | lolcat -a -s 100;
 echo -e "||==========================================================||" | lolcat -a -s 100;
-echo -e "||=====================!INFORMATIONS!=======================||" | lolcat -a -s 100;
+echo -e "||====================!INFORMATIONS!========================||" | lolcat -a -s 100;
 echo -e "||= 1. $ raws help         || Watch this output!"                    | lolcat -a -s 100;
 echo -e "||= 2. $ raws info         || Show Env Infos"                        | lolcat -a -s 100;
 echo -e "||= 3. $ raws sysinfo      || Show system info"                      | lolcat -a -s 100;
@@ -27,7 +27,7 @@ echo -e "||= 2. $ raws inginx       || Install Nginx and Php5-Fpm"            | 
 echo -e "||= 3. $ raws imysql       || Install MySql Server"                  | lolcat -a -s 100;
 echo -e "||= 4. $ raws iyt          || Install youtube-dl"                    | lolcat -a -s 100;
 echo -e "||==========================================================||" | lolcat -a -s 100;
-echo -e "||======================!VIRTUALHOSTS!======================||" | lolcat -a -s 100;
+echo -e "||====================!VIRTUALHOSTS!========================||" | lolcat -a -s 100;
 echo -e "||= 1. $ raws ahost ex.com || Create virtualhost with Apache"   | lolcat -a -s 100;
 echo -e "||= 2. $ raws nhost ex.com || Create virtualhost with Nginx"    | lolcat -a -s 100;
 echo -e "||==========================================================||" | lolcat -a -s 100;
