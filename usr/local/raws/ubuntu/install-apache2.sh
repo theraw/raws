@@ -17,7 +17,7 @@ echo -n "Restarting Apache2..." | lolcat -a -s 100; service apache2 restart >> /
 echo -n "Creating Host Dir..." | lolcat -a -s 100; mkdir /hostdata && chmod -R 755 /hostdata/ >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
 m='
 <Directory /hostdata/>
-         Options Indexes FollowSymLinks MultiViews
+         Options +Indexes +FollowSymLinks -MultiViews
          AllowOverride None
          Require all granted
 </Directory>
