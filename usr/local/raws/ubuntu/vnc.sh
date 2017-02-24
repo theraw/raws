@@ -8,6 +8,11 @@ wget http://download.nomachine.com/download/5.2/Linux/nomachine-workstation-eval
 wget http://download.nomachine.com/download/5.2/Linux/nomachine-plugin_5.2.11_1_i386.deb
 wget http://download.nomachine.com/download/5.2/Linux/nomachine-enterprise-client_5.2.11_1_amd64.deb
 wget http://download.nomachine.com/download/5.2/Linux/nomachine-terminal-server-node-evaluation_5.2.11_2_amd64.deb
+
+#Plugins 
+mkdir /vnc-pro/plugins/
+cd /vnc-pro/plugins/
+wget https://www.nomachine.com/downloads/5.2/sources/nxaudio-5.2.11.tar.gz
 }
 
 vnc-free() {
