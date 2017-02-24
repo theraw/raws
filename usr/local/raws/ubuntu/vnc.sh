@@ -1,5 +1,10 @@
 #!/bin/bash
 vnc-pro() {
+#User
+#useradd $usern
+#sudo usermod -a -G sudo $usern
+#echo $usrn:$pw | chpasswd -c MD5
+#End User.
 mkdir /vnc-pro/
 cd /vnc-pro/
 wget http://download.nomachine.com/download/5.2/Linux/nomachine-cloud-server-evaluation_5.2.11_2_amd64.deb
