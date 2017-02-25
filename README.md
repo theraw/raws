@@ -28,6 +28,7 @@
 
 1. ~~Fixing check mode when new version is out, problem is because you will not be able to read alert!~~ **Done.**
 2. **`raws switch`** - Turn Your Ubuntu 14.04 Server To Ubuntu 14.04 Desktop, And manage it from VNC.
+3. Adding raws to official ubuntu repository, which means one day u'll be able to install raws like "apt-get install raws" .
 
 #How to remove.
 Old version 0.5 was something like beta. 
