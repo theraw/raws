@@ -13,12 +13,12 @@
 
 1. **Fixed,** **`raws update`**
 
-2. **ADDED,** **`raws iyt`** which allow you to download and convert yt videos on .mp3 it's very simple 
+2. **Fixed,** **`raws info`**
+---
+1. **ADDED,** **`raws iyt`** which allow you to download and convert yt videos on .mp3 it's very simple 
 **`down https://www.youtube.com/watch?v=BuJtLePAcGw`**
 
-3. **Fixed,** **`raws info`**
-
-3. **ADDED,** **`raws inode`** install NodeJS Latest Stable!
+2. **ADDED,** **`raws inode`** install NodeJS Latest Stable!
 
 
 
