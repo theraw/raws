@@ -27,22 +27,21 @@ case "`lsb_release -is`" in
              cd raws/
              mkdir ubuntu/
              cd ubuntu/
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/rv.sh
+             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/rv
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/st.py
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/si.sh
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/install-apache2.sh
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/ahost.sh
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/help.sh
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/imysql.sh
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/yt.sh
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/bye.sh
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/update.sh
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/env.sh
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/install-iptables.sh
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/inode.sh
+             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/si
+             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/install-apache2
+             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/ahost
+             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/help
+             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/imysql
+             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/yt
+             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/bye
+             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/update
+             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/env
+             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/inode
              chmod +x *
              cd /usr/local/raws/
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/check.sh
+             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/check
              chmod +x check.sh
              clear
              raws -v
