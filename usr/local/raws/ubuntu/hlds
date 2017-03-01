@@ -35,7 +35,13 @@ c1s6() {
       clear
 }
 
-c5() {
+c3() {
+      mkdir -p ~/.steam/sdk32/
+      cd ~/.steam/sdk32/
+      ln -s /build/c/steam/cmd/linux32/steamclient.so .
+}
+
+c2() {
       cd /cs/
       rm -Rf engine_i486.so
       wget https://github.com/systemroot/raws-dev/raw/master/static/cs/re/engine_i486.so
@@ -44,8 +50,33 @@ c5() {
       clear
 }
 
-c4() {
-      mkdir -p ~/.steam/sdk32/
-      cd ~/.steam/sdk32/
-      ln -s /build/c/steam/cmd/linux32/steamclient.so .
+amx() {
+      cd /cs/
+      wget http://www.amxmodx.org/release/amxmodx-1.8.2-base-linux.tar.gz
+      tar xzvf amxmodx-1.8.2-base-linux.tar.gz
+      rm -Rf amxmodx-1.8.2-base-linux.tar.gz
+      wget http://www.amxmodx.org/release/amxmodx-1.8.2-cstrike-linux.tar.gz
+      tar xzvf amxmodx-1.8.2-cstrike-linux.tar.gz
+      rm -Rf amxmodx-1.8.2-cstrike-linux.tar.gz
+      clear
+}
+
+meta() {
+      cd /cs/cstrike/
+      mkdir -p addons/metamod/dlls/
+      cd addons/metamod/dlls/
+      wget https://github.com/systemroot/raws-dev/raw/master/static/cs/ad/metamod.so
+      cd /cs/cstrike/addons/metamod/
+      touch plugins.ini
+      echo 'linux addons/amxmodx/dlls/amxmodx_mm_i386.so' > plugins.ini
+      cd /cs/cstrike
+      rm -Rf liblist.gam
+      wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/cs/txt/liblist.gam
+      chmod +x liblist.gam
+      clear
+}
+
+c1() {
+      
+      clear
 }
