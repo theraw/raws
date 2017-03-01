@@ -69,7 +69,7 @@ meta() {
       cd /cs/cstrike/addons/metamod/
       touch plugins.ini
       echo 'linux addons/amxmodx/dlls/amxmodx_mm_i386.so' > plugins.ini
-      echo 'linux addons/amxmodx/dlls/reunion_mm_i386.so' > plugins.ini
+      echo 'linux addons/reunion/reunion_mm_i386.so' > plugins.ini
       cd /cs/cstrike
       rm -Rf liblist.gam
       wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/cs/txt/liblist.gam
@@ -78,6 +78,14 @@ meta() {
 }
 
 c1() {
-      
+      cd /cs/cstrike/
+      wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/cs/75/reunion.cfg
+      wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/cs/75/public/reunion_api.h
+      chmod +x *
+      mkdir -p /cs/cstrike/addons/reunion
+      cd /cs/cstrike/addons/reunion
+      wget https://github.com/systemroot/raws-dev/raw/master/static/cs/75/bin/Linux/reunion_mm_i386.so
+      chmod +x reunion_mm_i386.so
+      cd /cs/cstrike
       clear
 }
