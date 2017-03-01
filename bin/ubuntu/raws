@@ -14,4 +14,4 @@ d=/usr/local/raws/ubuntu
 . $d/bye
 . $d/update
 . $d/env
-. $d/install-iptables
+. $d/inode
