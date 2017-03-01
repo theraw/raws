@@ -1,6 +1,6 @@
 #!/bin/bash
-clear
 inode() {
+clear
 rm -Rf /usr/local/n/versions/node/*
 clear
 echo -n "Updating System..." | lolcat -a -s 100; sudo apt-get update -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
