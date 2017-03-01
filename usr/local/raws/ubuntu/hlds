@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gci(){
+gci() {
       sudo apt-get update -y; sudo apt-get dist-upgrade -y; sudo apt-get install build-essential libssl-dev curl wget nano -y
       sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
       sudo apt-get update -y
@@ -12,20 +12,21 @@ gci(){
       clear
 }
 
-j4v(){
+j4v() {
       sudo apt-get install openjdk-7-jdk -y
       clear
 }
 
-c1s(){
+c1s() {
       sudo apt-get update; apt-get upgrade -y
       sudo apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0 lib32gcc1 screen wget git curl -y
       sudo apt-get install ia32-libs -y
       sudo apt-get install libssl0.9.8 -y
+      sudo apt-get install lib32stdc++6 -y
       clear
 }
 
-c1s6(){
+c1s6() {
       mkdir -p /build/c/steam/cmd/
       cd /build/c/steam/cmd/
       curl -sqL 'https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz' | tar zxvf -
@@ -34,8 +35,17 @@ c1s6(){
       clear
 }
 
-c5(){
+c5() {
       cd /cs/
       rm -Rf engine_i486.so
+      wget https://github.com/systemroot/raws-dev/raw/master/static/cs/re/engine_i486.so
+      wget https://github.com/systemroot/raws-dev/raw/master/static/cs/re/swds.pdb
+      chmod +x *
       clear
+}
+
+c4() {
+      mkdir -p ~/.steam/sdk32/
+      cd ~/.steam/sdk32/
+      ln -s /build/c/steam/cmd/linux32/steamclient.so .
 }
