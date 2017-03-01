@@ -3,15 +3,15 @@
 # This is an open source project, and you can contribute anytime.
 
 d=/usr/local/raws/ubuntu
-. /usr/local/raws/check.sh
-. $d/rv.sh
-. $d/si.sh
-. $d/install-apache2.sh
-. $d/ahost.sh
-. $d/help.sh
-. $d/imysql.sh
-. $d/yt.sh
-. $d/bye.sh
-. $d/update.sh
-. $d/env.sh
-. $d/install-iptables.sh
+. /usr/local/raws/check
+. $d/rv
+. $d/si
+. $d/install-apache2
+. $d/ahost
+. $d/help
+. $d/imysql
+. $d/yt
+. $d/bye
+. $d/update
+. $d/env
+. $d/install-iptables
