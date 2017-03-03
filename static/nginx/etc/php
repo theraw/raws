@@ -1,0 +1,47 @@
+#!/bin/bash
+
+#usage : php start / php stop / etc.
+if [ "$1" == 'status' ]; then
+   service php5.6-fpm status
+fi
+
+if [ "$1" == 'start' ]; then
+   service php5.6-fpm start
+fi
+
+if [ "$1" == 'stop' ]; then
+   service php5.6-fpm stop
+fi
+
+if [ "$1" == 'restart' ]; then
+   service php5.6-fpm restart
+fi
+
+if [ "$1" == 'reload' ]; then
+   service php5.6-fpm reload
+fi
+
+if [ "$1" == 'force-reload' ]; then
+   service php5.6-fpm force-reload
+fi
+
+#Shorts
+if [ "$1" == 's' ]; then
+   service php5.6-fpm start
+fi
+
+if [ "$1" == 'p' ]; then
+   service php5.6-fpm stop
+fi
+
+if [ "$1" == 'r' ]; then
+   service php5.6-fpm reload
+fi
+
+if [ "$1" == 'rs' ]; then
+   service php5.6-fpm restart
+fi
+
+if [ "$1" == 'fr' ]; then
+   service php5.6-fpm force-reload
+fi
