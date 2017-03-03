@@ -153,7 +153,7 @@ fix() {
        sh fix
 }
 
-php() {
+php0() {
        service nginx stop
        sudo add-apt-repository ppa:ondrej/php -y
        apt-get update -y
@@ -174,6 +174,10 @@ php() {
        fpm restart
 }
 
-list() {
-       apt-cache search php5.6 | grep php5.6
-}
+#list() {
+#       apt-cache search php5.6 | grep php5.6
+#}
+
+if [ "$1" == 'inginx' ]; then
+   packs; dirs; modules; library; ng1nx; setup; build; fix; php0;
+fi
