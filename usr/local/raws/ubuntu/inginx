@@ -173,3 +173,7 @@ php() {
        service nginx restart
        fpm restart
 }
+
+list() {
+       apt-cache search php5.6 | grep php5.6
+}
