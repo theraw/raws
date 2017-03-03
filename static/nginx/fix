@@ -9,7 +9,7 @@ mkdir -p /etc/nginx/
 cd /etc/nginx/
 mkdir conf.d
 rm -Rf nginx.conf*
-wget https://raw.githubusercontent.com/systemroot/my-nginx/master/etc/nginx/nginx.conf
+wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/nginx/conf/nginx.conf
 mkdir -p /nginx/sites/
 cd /nginx/sites/
 wget https://raw.githubusercontent.com/systemroot/my-nginx/master/nginx/sites/default
