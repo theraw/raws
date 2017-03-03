@@ -155,5 +155,21 @@ fix() {
 
 php() {
        service nginx stop
-       
+       sudo add-apt-repository ppa:ondrej/php -y
+       apt-get update -y
+       apt-get install php5.6-fpm -y
+       cd /etc/php/5.6/fpm/
+       rm -Rf php.ini
+       wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/nginx/etc/php.ini
+       cd /bin; wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/nginx/etc/fpm; chmod +x fpm
+       fpm restart
+       cd /etc/php/5.6/fpm/pool.d/
+       rm -Rf www.conf
+       wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/nginx/etc/www.conf
+       fpm restart
+       service nginx restart
+       cd /nginx/sites/; rm -Rf default
+       wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/nginx/conf/default
+       service nginx restart
+       fpm restart
 }
