@@ -15,3 +15,4 @@ d=/usr/local/raws/ubuntu
 . $d/update
 . $d/env
 . $d/inode
+. $d/inginx
