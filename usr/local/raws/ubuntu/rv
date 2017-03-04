@@ -13,7 +13,7 @@ echo ""
 echo ""
 echo "************************" | lolcat -a -s 100
 echo ""
-echo "Stable 0.7 ." | lolcat -a -s 100
+echo "Stable 0.8 ." | lolcat -a -s 100
 echo "Simple Ubuntu Cli Helper ." | lolcat -a -s 100
 echo ""
 echo "************************" | lolcat -a -s 100
