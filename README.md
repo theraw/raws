@@ -20,6 +20,10 @@
 
 2. **ADDED,** **`raws inode`** install NodeJS Latest Stable!
 
+3. **ADDED,** **`raws inginx`** [Build Nginx + Php5.6 Fpm](https://github.com/systemroot/my-nginx)
+
+4. **ADDED,** **`raws nhost ex.com`** Create a virtualhost with nginx. (you know you can't use both nginx&apache in :80 xD)
+
 
 
 #in proccess.
