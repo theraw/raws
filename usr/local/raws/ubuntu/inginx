@@ -188,7 +188,7 @@ if [ "$1" == 'inginx' ]; then
    echo " Nginx 1.9.7 And Php5.6 Fpm Is Installed" | lolcat -a -s 100;
    echo " For more info https://github.com/systemroot/my-nginx" | lolcat -a -s 100;
    echo " cat /bin/fpm to read php shortcuts" | lolcat -a -s 100;
-   echo " You can search php5.6 pack by executing" | lolcat -a -s 100;
+   echo " You can search php5.6 packs by executing" | lolcat -a -s 100;
    echo " apt-cache search php5.6 | grep php5.6 "
    echo " Have a nice day!"
 fi
