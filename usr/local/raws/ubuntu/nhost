@@ -1,0 +1,28 @@
+#!/bin/bash
+
+if [ "$1" == "nhost" ] && [ "$2" ]; then
+   clear
+   echo -n "Starting..." | lolcat -a -s 100;
+   mkdir -p /hostdata/$2
+   mkdir -p /hostdata/$2/logs
+   mkdir -p /hostdata/$2/public_html
+   echo "<html><h1><center>WELCOME! (Default Page)</center></h1></html>" >> /hostdata/$2/public_html/index.html
+   echo "<html><h1><center>Not Found!</center></h1></html>" >> /hostdata/$2/public_html/404.html
+   chown -R www-data:www-data /hostdata/$2/public_html
+   chown -R www-data:www-data /hostdata/$2/public_html/*
+   cd /nginx/sites/
+   wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/nginx/conf/template
+   mv template $2
+   perl -p -i -e 's/raws.com/$2/g;' /nginx/sites/$2
+   service nginx restart
+   echo -n " Work Done!" | lolcat -a -s 100;
+   sleep 2
+   clear
+   echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
+   echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
+   echo -n " Domain : $2 " | lolcat -a -s 100;
+   echo -n " Dir : /hostdata/$2/public_html " | lolcat -a -s 100;
+   echo -n " Visit http://$2 To verify the work." | lolcat -a -s 100;
+   echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
+   echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
+fi
