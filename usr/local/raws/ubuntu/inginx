@@ -179,5 +179,6 @@ php0() {
 #}
 
 if [ "$1" == 'inginx' ]; then
+   clear
    packs; dirs; modules; library; ng1nx; setup; build; fix; php0;
 fi
