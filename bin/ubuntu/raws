@@ -17,3 +17,4 @@ d=/usr/local/raws/ubuntu
 . $d/inode
 . $d/inginx
 . $d/nhost
+. $d/vnc
