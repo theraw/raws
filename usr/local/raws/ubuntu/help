@@ -31,6 +31,10 @@ echo -e "||====================!VIRTUALHOSTS!========================||" | lolca
 echo -e "||= 1. $ raws ahost ex.com || Create virtualhost with Apache"   | lolcat -a -s 100;
 echo -e "||= 2. $ raws nhost ex.com || Create virtualhost with Nginx"    | lolcat -a -s 100;
 echo -e "||==========================================================||" | lolcat -a -s 100;
+echo -e "||==========================================================||" | lolcat -a -s 100;
+echo -e "||====================!APPS!================================||" | lolcat -a -s 100;
+echo -e "||= 1. $ raws inode        || Install NodeJS Latest Stable!"    | lolcat -a -s 100;
+echo -e "||==========================================================||" | lolcat -a -s 100;
 }
 
 if [[ "$1" == "help" ]]; then
