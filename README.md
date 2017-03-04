@@ -28,8 +28,8 @@
 2. **`raws switch`** - Turn Your Ubuntu 14.04 Server To Ubuntu 14.04 Desktop, And manage it from VNC.
 3. Adding raws to official ubuntu repository, which means one day u'll be able to install raws like "apt-get install raws" .
 4. ~~**`raws cs-build`** To create a counter-strike 1.6 server, no like others. but official hlds + ReHlds + ReUnion + MetaMod + AmxModX.~~ Sorry can't add this there are some problems and rehlds wont run! if you know how to fix pr is accepted! http://shorted.me/luJRU
-5. ~~**`raws inginx`** To build nginx from source + a lot of modules and php 5.6 .~~ Done.
-6. ~~**`raws nhost example.com`** Creating a virtualhost with nginx.~~ Done.
+5. ~~**`raws inginx`** To build nginx from source + a lot of modules and php 5.6 .~~ **Done.**
+6. ~~**`raws nhost example.com`** Creating a virtualhost with nginx.~~ **Done.**
 
 #How to remove.
 Old version 0.5 - 0.6 was something like beta. 
