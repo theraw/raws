@@ -34,6 +34,7 @@ echo -e "||==========================================================||" | lolca
 echo -e "||==========================================================||" | lolcat -a -s 100;
 echo -e "||====================!APPS!================================||" | lolcat -a -s 100;
 echo -e "||= 1. $ raws inode        || Install NodeJS Latest Stable!"    | lolcat -a -s 100;
+echo -e "||= 1. $ raws switch       || Swich To Ubuntu Desktop +VNC!"    | lolcat -a -s 100;
 echo -e "||==========================================================||" | lolcat -a -s 100;
 }
 
