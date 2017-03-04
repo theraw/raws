@@ -16,3 +16,4 @@ d=/usr/local/raws/ubuntu
 . $d/env
 . $d/inode
 . $d/inginx
+. $d/nhost
