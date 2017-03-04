@@ -14,6 +14,7 @@ chmod +x xstartup
 }
 
 if [[ "$1" == "switch" ]]; then
+   clear
    switch
    clear
    echo "Installation Done" | lolcat -a -s 100;
