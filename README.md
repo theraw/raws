@@ -25,7 +25,7 @@
 #in proccess.
 
 1. ~~Fixing check mode when new version is out, problem is because you will not be able to read alert!~~ **Done.**
-2. **`raws switch`** - Turn Your Ubuntu 14.04 Server To Ubuntu 14.04 Desktop, And manage it from VNC.
+2. ~~**`raws switch`** - Turn Your Ubuntu 14.04 Server To Ubuntu 14.04 Desktop, And manage it from VNC.~~ **Done.**
 3. Adding raws to official ubuntu repository, which means one day u'll be able to install raws like "apt-get install raws" .
 4. ~~**`raws cs-build`** To create a counter-strike 1.6 server, no like others. but official hlds + ReHlds + ReUnion + MetaMod + AmxModX.~~ Sorry can't add this there are some problems and rehlds wont run! if you know how to fix pr is accepted! http://shorted.me/luJRU
 5. ~~**`raws inginx`** To build nginx from source + a lot of modules and php 5.6 .~~ **Done.**
