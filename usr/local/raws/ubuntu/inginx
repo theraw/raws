@@ -182,13 +182,13 @@ if [ "$1" == 'inginx' ]; then
    clear
    packs; dirs; modules; library; ng1nx; setup; build; fix; php0;
    clear
-   echo "installation done!" | lolcat -a -s 100;
-   echo "Well Execute Nginx -t and you can see if everything is working well" | lolcat -a -s 100;
+   echo " Installation done!" | lolcat -a -s 100;
+   echo " We'll Execute Nginx -t and you can see if everything is working well" | lolcat -a -s 100;
    nginx -t
-   echo "Nginx 1.9.7 And Php5.6 Fpm Is Installed" | lolcat -a -s 100;
-   echo "For more info https://github.com/systemroot/my-nginx" | lolcat -a -s 100;
+   echo " Nginx 1.9.7 And Php5.6 Fpm Is Installed" | lolcat -a -s 100;
+   echo " For more info https://github.com/systemroot/my-nginx" | lolcat -a -s 100;
    echo " cat /bin/fpm to read php shortcuts" | lolcat -a -s 100;
-   echo " you can search php5.6 pack by executing" | lolcat -a -s 100;
+   echo " You can search php5.6 pack by executing" | lolcat -a -s 100;
    echo " apt-cache search php5.6 | grep php5.6 "
    echo " Have a nice day!"
 fi
