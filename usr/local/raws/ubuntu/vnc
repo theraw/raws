@@ -9,7 +9,8 @@ switch() {
           sudo apt-get install vnc4server -y
           sudo apt-get install software-properties-common -y
           sudo apt-get install python3-software-properties -y
-          sudo apt-get install python-software-properties --y
+          sudo apt-get install python-software-properties -y
+          sudo apt-get install unity-tweak-tool gnome-tweak-tool -y
 
           mkdir ~/work
           cd ~/work
@@ -34,9 +35,6 @@ switch() {
           apt-get install leafpad -y
           apt-get install zip unzip curl audacity youtube-dl id3v2 mplayer -y
           cd ~/work
-          wget https://raw.githubusercontent.com/systemroot/personal-files/master/s.sh
-          chmod +x s.sh
-          sh s.sh
           rm -Rf ~/work
           mkdir -p /tmp
           cd /tmp
