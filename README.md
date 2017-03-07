@@ -4,6 +4,8 @@
 
 **2.** **``$ raws help``**
 
+![](http://image.prntscr.com/image/931009a8a11543a8bd8c5c1a7a755dc9.png)
+
 
 
 #New.
