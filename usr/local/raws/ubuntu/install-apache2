@@ -23,6 +23,9 @@ m='
 </Directory>
 '
 echo "$m" >> /etc/apache2/apache2.conf
+cd /var/www/html; rm -Rf index.html
+wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/apache/index.html
+clear
 echo -n "Restarting Apache2..." | lolcat -a -s 100; service apache2 restart >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
 echo -n "Installation Has END." | lolcat -a -s 100;
 sleep 3
