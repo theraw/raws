@@ -3,6 +3,11 @@
 ilxd() {
           sudo apt-get update -y; apt-get upgrade -y; apt-get dist-upgrade -y
           sudo apt-get autoremove -y; apt-get autoclean -y
+          add-apt-repository ppa:ubuntu-lxc/lxd-stable -y
+          sudo apt-get update -y
+          sudo apt-get install lxd -y
+          newgrp lxd
+          
           
 }
 
