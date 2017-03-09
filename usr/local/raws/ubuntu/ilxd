@@ -1,0 +1,11 @@
+#!/bin/bash
+
+ilxd() {
+          sudo apt-get update -y; apt-get upgrade -y; apt-get dist-upgrade -y
+          sudo apt-get autoremove -y; apt-get autoclean -y
+          
+}
+
+if [ "$1" == 'ilxd' ]; then
+   ilxd
+fi
