@@ -6,6 +6,6 @@ ivagrant() {
           
 }
 
-if [ "$1" == 'idocker' ]; then
+if [ "$1" == 'ivagrant' ]; then
    ivagrant
 fi
