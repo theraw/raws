@@ -38,6 +38,7 @@
 6. ~~**`raws nhost example.com`** Creating a virtualhost with nginx.~~ **Done.**
 7. **`raws idocker`**
 8. **`raws ivagrant`**
+9. **`raws ilxd`**
 
 #How to remove.
 Old version 0.5 - 0.6 was something like beta. 
