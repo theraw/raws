@@ -14,8 +14,7 @@ switch() {
 
           mkdir ~/work
           cd ~/work
-          wget https://github.com/adobe/brackets/releases/download/release-1.8/Brackets.Release.1.8.64-bit.deb
-          dpkg -i Brackets.Release.1.8.64-bit.deb
+          sudo add-apt-repository ppa:webupd8team/brackets -y
           sudo add-apt-repository ppa:noobslab/themes -y
           sudo add-apt-repository ppa:upubuntu-com/icons -y
           sudo add-apt-repository ppa:numix/ppa -y
@@ -25,6 +24,7 @@ switch() {
           sudo apt-get install superflat-icon-theme -y
           sudo apt-get install papirus-icon-theme -y
           sudo apt-get install flatabulous-theme -y
+          sudo apt-get install brackets -y
           sudo apt-get install numix-folders numix-icon-theme-bevel numix-tools numix-plymouth-theme numix-wallpaper-aurora numix-icon-theme-square numix-wallpaper-lightbulb stylishdark-theme royal-gtk-theme numix-gtk-theme shimmer-themes -y
           wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
           sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
