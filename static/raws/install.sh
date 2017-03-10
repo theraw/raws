@@ -34,4 +34,5 @@ chmod +x *
 cd /usr/local/raws/
 wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/check
 chmod +x check.sh
+rm -Rf /rT
 clear
