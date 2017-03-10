@@ -44,6 +44,7 @@
 7. **`raws idocker`**
 8. **`raws ivagrant`**
 9. **`raws ilxd`**
+10. **`raws iapache`** Will use php5.6 !
 
 #How to remove.
 Old version 0.5 - 0.6 was something like beta. 
