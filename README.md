@@ -27,6 +27,10 @@
 
 5. **ADDED,** **`raws switch`** Turn Your Ubuntu 14.04 server on desktop and connect it from [VNC Viewer](https://www.realvnc.com/download/viewer/)
 
+---
+
+. **Released,** `Installation script. Add Better installation way.`
+. **Released,** `Total Release, Removing .sh extension and using "sudo" everytime.`
 
 #in proccess.
 
