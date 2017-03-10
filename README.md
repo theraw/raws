@@ -29,8 +29,9 @@
 
 ---
 
-. **Released,** `Installation script. Add Better installation way.`
-. **Released,** `Total Release, Removing .sh extension and using "sudo" everytime.`
+* **Released,** `Installation script. Add Better installation way.`
+
+* **Released,** `Total Release, Removing .sh extension and using "sudo" everytime.`
 
 #in proccess.
 
