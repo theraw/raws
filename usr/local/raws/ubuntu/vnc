@@ -3,7 +3,7 @@ switch() {
           sudo apt-get update; sudo apt-get upgrade -y; sudo apt-get dist-upgrade -y
           sudo apt-get install build-essential libssl-dev curl nano wget git -y
           sudo apt-get install ubuntu-desktop -y
-          sudo apt-get install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal -y
+          sudo apt-get install gnome-panel gnome-session gnome-settings-daemon metacity nautilus gnome-terminal -y
           sudo apt-get install synaptic -y
           sudo apt-get install gparted -y
           sudo apt-get install vnc4server -y
@@ -48,8 +48,11 @@ switch() {
           cd rar
           make
           sudo make install
-          vncserver
-          vncserver -kill :1
+          
+          dpkg-reconfigure lightdm
+          gsettings set org.gnome.desktop.background show-desktop-icons true
+          clear
+          mkdir -p ~/.vnc
           cd ~/.vnc/
           rm -Rf xstartup
           wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/vnc/xstartup
@@ -65,4 +68,6 @@ if [[ "$1" == "switch" ]]; then
    echo "You can start VNC like" | lolcat -a -s 100;
    echo "vncserver -geometry 1920x1080"
    echo "Then connect from vnc viewer on serverip:5901"
+   echo "Fist set a vnc password with command..."
+   echo "vncpasswd"
 fi
