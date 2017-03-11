@@ -46,6 +46,8 @@
 9. **`raws ilxd`**
 10. **`raws iapache`** Will use php5.6 !
 11. **`raws radio on`** Open a Radio station !
+12. **`raws adel`** Delete the site which you used "**raws ahost**" to create.
+13. **`raws ndel`** Delete the site which you used "**raws nhost**" to create.
 
 #How to remove.
 Old version 0.5 - 0.6 was something like beta. 
