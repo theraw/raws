@@ -19,3 +19,9 @@ gnome-settings-daemon &
 gnome-panel &
 nautilus &
 gnome-terminal &
+
+#HACK!!
+# if you want to recover theme, icons or anything you can simply do
+# Login from putty and stop vnc. like, vncserver -kill :1
+# rm -Rf ~/.config/dconf/user
+# start vnc then and you'll se everything is like in begin.
