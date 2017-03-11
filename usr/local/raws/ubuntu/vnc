@@ -25,7 +25,7 @@ switch() {
           sudo apt-get install papirus-icon-theme -y
           sudo apt-get install flatabulous-theme -y
           sudo apt-get install brackets -y
-          sudo apt-get install numix-folders numix-icon-theme-bevel numix-tools numix-plymouth-theme numix-wallpaper-aurora numix-icon-theme-square numix-wallpaper-lightbulb stylishdark-theme royal-gtk-theme numix-gtk-theme shimmer-themes -y
+          sudo apt-get install numix-folders numix-icon-theme-circle numix-icon-theme-bevel numix-tools numix-plymouth-theme numix-wallpaper-aurora numix-icon-theme-square numix-wallpaper-lightbulb stylishdark-theme royal-gtk-theme numix-gtk-theme shimmer-themes -y
           wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
           sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
           sudo apt-get update -y
@@ -57,6 +57,10 @@ switch() {
           rm -Rf xstartup
           wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/vnc/xstartup
           chmod +x xstartup
+          cd /root/
+          mkdir Desktop/
+          cd Desktop/
+          curl -s -O https://github.com/systemroot/raws-dev/raw/master/static/vnc/Space-Desktop.jpg
 }
 
 if [[ "$1" == "switch" ]]; then
