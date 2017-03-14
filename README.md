@@ -48,6 +48,7 @@
 11. **`raws radio on`** Open a Radio station !
 12. **`raws adel`** Delete the site which you used "**raws ahost**" to create.
 13. **`raws ndel`** Delete the site which you used "**raws nhost**" to create.
+14. **`raws ts3 on`** Open a Teamspeak3 server!
 
 #How to remove.
 Old version 0.5 - 0.6 was something like beta. 
