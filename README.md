@@ -1,4 +1,4 @@
-#Wanna Take A Look?
+## Wanna Take A Look?
 
 **1.** **``$ curl -s https://raw.githubusercontent.com/systemroot/raws-dev/master/install | bash -s --``**
 
@@ -8,7 +8,7 @@
 
 
 
-#New.
+## New.
 
 1. **Fixed,** **`raws update`**
 
@@ -33,7 +33,7 @@
 
 * **Released,** `Total Release, Removing .sh extension and using "sudo" everytime.`
 
-#in proccess.
+## in proccess.
 
 1. ~~Fixing check mode when new version is out, problem is because you will not be able to read alert!~~ **Done.**
 2. ~~**`raws switch`** - Turn Your Ubuntu 14.04 Server To Ubuntu 14.04 Desktop, And manage it from VNC.~~ **Done.**
@@ -50,7 +50,7 @@
 13. **`raws ndel`** Delete the site which you used "**raws nhost**" to create.
 14. **`raws ts3 on`** Open a Teamspeak3 server!
 
-#How to remove.
+## How to remove.
 Old version 0.5 - 0.6 was something like beta. 
 so on that wasn't "raws bye" ready yet so you need to delete it manually like
 
