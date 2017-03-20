@@ -49,6 +49,7 @@
 12. **`raws adel`** Delete the site which you used "**raws ahost**" to create.
 13. **`raws ndel`** Delete the site which you used "**raws nhost**" to create.
 14. **`raws ts3 on`** Open a Teamspeak3 server!
+15. **`raws isql`** Will install phpmyadmin mysql server, cause if you install them as normal when you are using nginx, that will install apache and some other unneeded modules. so "raws isql" will install only mysql server and phpmyadmin in strict mode!.
 
 ## How to remove.
 Old version 0.5 - 0.6 was something like beta. 
