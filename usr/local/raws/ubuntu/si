@@ -29,7 +29,7 @@ echo -n "|**********| $distro. |**********|" | lolcat -a -s 100
 echo -n "|**********| $x.             |**********|" | lolcat -a -s 100
 echo -n "|**********| With  : $cpu CPU/s.    |**********|" | lolcat -a -s 100
 echo -n "|**********| Clock : $ck    |**********|" | lolcat -a -s 100
-echo -n "|**********| RAM   : $ram GB.  |**********|" | lolcat -a -s 100
+echo -n "|**********| RAM   : $ram MB.  |**********|" | lolcat -a -s 100
 echo -n "|-------------------------------------------|" | lolcat -a -s 100
 echo -n "|-------------------------------------------|" | lolcat -a -s 100
 echo -n "|**********|      ~NETWORK~      |**********|" | lolcat -a -s 100
