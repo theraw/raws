@@ -12,6 +12,7 @@ switch() {
           sudo apt-get install python-software-properties -y
           sudo apt-get install unity-tweak-tool gnome-tweak-tool -y
           sudo apt-get install xfonts-100dpi xfonts-100dpi-transcoded xfonts-75dpi xfonts-75dpi-transcoded xfonts-base -y
+          sudo apt-get install gnome-system-tools -y
           
 
           mkdir ~/work
