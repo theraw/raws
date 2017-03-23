@@ -50,6 +50,7 @@
 13. **`raws ndel`** Delete the site which you used "**raws nhost**" to create.
 14. **`raws ts3 on`** Open a Teamspeak3 server!
 15. **`raws isql`** Will install phpmyadmin mysql server, cause if you install them as normal when you are using nginx, that will install apache and some other unneeded modules. so "raws isql" will install only mysql server and phpmyadmin in strict mode!.
+16. **`hot release!`** Version 1.0 of **`raws`** will be more strict. There will be a check who will check every command, example you try to install apache2 with raws, raws first will check if apache exist and will delete it then will install apache again. This check will not be just for apache but for everything!
 
 ## How to remove.
 Old version 0.5 - 0.6 was something like beta. 
