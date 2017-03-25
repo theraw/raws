@@ -116,7 +116,6 @@ cat <<EOF > /opt/nginx/sources/nginx-1.9.7/build.sh
 --with-http_realip_module \
 --with-file-aio \
 --with-stream \
---with-debug \
 --with-stream_ssl_module \
 --with-threads \
 --with-http_dav_module \
