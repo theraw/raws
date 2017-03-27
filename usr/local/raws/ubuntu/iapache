@@ -26,9 +26,11 @@ update() {
         clear
         echo "Starting... #Step 1." | lolcat -a -s 100;
         echo -n "Updating System..." | lolcat -a -s 100; apt-get update -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
-        echo -n "Ugrading System..." | lolcat -a -s 100; apt-get upgrade -y; apt-get dist-upgrade -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
+        echo -n "Ugrading System..." | lolcat -a -s 100; apt-get upgrade -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
+        echo -n "Ugrading System2..." | lolcat -a -s 100; apt-get dist-upgrade -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
         echo -n "Installing Basic Packs..." | lolcat -a -s 100; apt-get install build-essential libssl-dev curl nano wget git zip unzip -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
-        echo -n "Installing PPA..." | lolcat -a -s 100; apt-get install software-properties-common -y; apt-get install python-software-properties -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
+        echo -n "Installing PPA..." | lolcat -a -s 100; apt-get install software-properties-common -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
+        echo -n "Installing PPA2..." | lolcat -a -s 100; apt-get install python-software-properties -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
         echo -n "Removing What Isn't Needed!..." | lolcat -a -s 100; apt-get autoremove -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
 }
 
@@ -36,7 +38,8 @@ newphp() {
         clear
         echo "Starting... #Step 2." | lolcat -a -s 100;
         echo -n "Using php5.6 PPA..." | lolcat -a -s 100; sudo add-apt-repository ppa:ondrej/php -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
-        echo -n "Updating Repo!..." | lolcat -a -s 100; apt-get update -y; apt-get upgrade -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
+        echo -n "Updating Repo!..." | lolcat -a -s 100; apt-get update -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
+        echo -n "Updating Repo2!..." | lolcat -a -s 100; apt-get upgrade -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
         apt-get autoremove -y
 }
 
@@ -74,7 +77,6 @@ m='
         cd /var/www/html; rm -Rf index.html
         curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/static/apache/index.html
         echo -n "Creating Host Dir..." | lolcat -a -s 100; mkdir /hostdata && chmod -R 755 /hostdata/ >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
-        echo -n "Enabling Mcrypt..." | lolcat -a -s 100; sudo php5.6enmod mcrypt >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
         echo -n "Enabling Rewrite ..." | lolcat -a -s 100; sudo a2enmod rewrite >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
         echo -n "Restarting Apache2..." | lolcat -a -s 100; service apache2 restart >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
 }
