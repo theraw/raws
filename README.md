@@ -44,7 +44,7 @@
 7. **`raws idocker`**
 8. **`raws ivagrant`**
 9. **`raws ilxd`**
-10. ~~**`raws iapache`** Will use php5.6 !~~ Done.
+10. ~~**`raws iapache`** Will use php5.6 !~~ **Done.**
 11. **`raws radio on`** Open a Radio station !
 12. **`raws adel`** Delete the site which you used "**raws ahost**" to create.
 13. **`raws ndel`** Delete the site which you used "**raws nhost**" to create.
