@@ -19,7 +19,7 @@ case "`lsb_release -is`" in
              cd lolcat-master/
              gem install lolcat
              cd /bin
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/bin/ubuntu/raws
+             curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/bin/ubuntu/raws
              chmod +x raws
              clear
              cd /usr/local
@@ -27,25 +27,28 @@ case "`lsb_release -is`" in
              cd raws/
              mkdir ubuntu/
              cd ubuntu/
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/rv
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/st.py
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/si
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/install-apache2
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/ahost
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/help
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/imysql
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/yt
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/bye
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/update
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/env
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/inode
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/inginx
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/nhost
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/vnc
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/iapache
+             clear
+             echo "Downloading Scripts..."
+             curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/rv
+             curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/st.py
+             curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/si
+             curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/ahost
+             curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/help
+             curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/imysql
+             curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/yt
+             curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/bye
+             curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/update
+             curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/env
+             curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/inode
+             curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/inginx
+             curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/nhost
+             curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/vnc
+             curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/iapache
+             echo "Done..."
+             sleep 3
              chmod +x *
              cd /usr/local/raws/
-             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/check
+             curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/check
              chmod +x check.sh
              clear
              raws -v
