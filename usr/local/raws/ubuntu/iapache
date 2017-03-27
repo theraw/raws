@@ -1,0 +1,26 @@
+#!/bin/bash
+
+check() {
+        
+}
+
+update() {
+        
+}
+
+newphp() {
+        
+}
+
+install() {
+        
+}
+
+reconf() {
+        
+}
+
+#Wait for..
+if [ "$1" == 'iapache' ]; then
+   
+fi
