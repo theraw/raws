@@ -3,6 +3,7 @@
 delete() {
         rm -Rf /hostdata/$2
         sudo a2dissite $2
+        rm -Rf /etc/apache2/sites-available/$2.conf
         service apache2 reload
 }
 
