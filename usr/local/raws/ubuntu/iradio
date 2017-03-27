@@ -1,17 +1,32 @@
 #!/bin/bash
 
 check() {
-      
+        if [ "$(whoami)" != "root" ]
+           then
+               echo "You need to login as root to use raws iapache! Sorry!" | lolcat -a -s 100;
+               exit 1
+        fi
+        if [ -d "/etc/icecast2" ]; then
+          echo "Looks like IceCast2 is already installed there!" | lolcat -a -s 100;
+          echo "We'll remove it se we can make a clean install!" | lolcat -a -s 100;
+          apt-get remove --purge icecast2 -y
+          apt-get autoremove -y
+          apt-get autoclean -y
+        fi
 }
 
-dp() {
-      sudo apt-get update -y; sudo apt-get upgrade -y
-      apt-get dist-upgrade -y; apt-get autoclean -y
-      apt-get autoremove -y
-      apt-get install build-essential libssl-dev curl nano wget git zip unzip -y
-      
+cUser() {
+        useradd ice
+        mkdir /home/ice
+        mkdir /home/ice/music
+        chown -R ice:ice /home/ice
+        chown -R ice:ice /home/ice/*
 }
 
-usr() {
-
+GenPW() {
+        cd /root/
+        pw="`date +%s | sha256sum | base64 | head -c 8 ; echo`"
+        echo "$pw" > password.txt
+        pws="`cat pw.txt`"
+        echo ice:$pws | chpasswd -c MD5
 }
