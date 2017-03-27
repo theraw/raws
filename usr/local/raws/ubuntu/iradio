@@ -26,7 +26,105 @@ cUser() {
 GenPW() {
         cd /root/
         pw="`date +%s | sha256sum | base64 | head -c 8 ; echo`"
-        echo "$pw" > password.txt
-        pws="`cat pw.txt`"
+        echo "$pw" > passwordX.txt
+        pws="`cat passwordX.txt`"
         echo ice:$pws | chpasswd -c MD5
 }
+
+syS() {
+        apt-get update -y
+        apt-get upgrade -y
+        apt-get dist-upgrade -y
+        apt-get autoremove -y
+        apt-get install nano gcc make zip unzip build-essential screen pkg-config libxml2-dev icecast2 ezstream -y
+}
+
+down() {
+        mkdir /files
+        cd /files
+        wget http://downloads.xiph.org/releases/ogg/libogg-1.3.2.zip
+        wget http://downloads.xiph.org/releases/vorbis/libvorbis-1.3.5.zip
+        wget http://downloads.xiph.org/releases/libshout/libshout-2.4.1.tar.gz
+        wget http://downloads.xiph.org/releases/ezstream/ezstream-0.6.0.tar.gz
+}
+
+unZ() {
+        cd /files
+        unzip libogg-1.3.2.zip
+        unzip libvorbis-1.3.5.zip
+        tar xf libshout-2.4.1.tar.gz
+        tar xf ezstream-0.6.0.tar.gz
+}
+
+inS() {
+        cd /files/libogg-1.3.2/
+        ./configure
+        make && make install
+        
+        cd /files/libvorbis-1.3.5
+        ./configure
+        make && make install
+        
+        cd /files/libshout-2.4.1
+        ./configure
+        make && make install
+        
+        cd /files/ezstream-0.6.0
+        ./configure
+        make && make install
+        
+        rm -Rf /files/
+}
+
+reConF() {
+        rm -Rf /etc/default/icecast2
+        cd /etc/default/
+        curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/static/radio/icecast2
+
+        rm -Rf /etc/icecast2/icecast.xml
+        cd /etc/icecast2/
+        curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/static/radio/icecast.xml
+
+        pws="`cat /root/passwordX.txt`"
+        sed -i -e "s/REPW/$pws/g" /etc/icecast2/icecast.xml
+
+        ho5="`hostname`"
+        sed -i -e "s/owner@change.me/root@$ho5/g" /etc/icecast2/icecast.xml
+        
+cat <<EOF > /home/ice/ezstream_mp3.xml
+<ezstream>
+    <url>http://`curl -s api.ipify.org`:8000/stream</url>
+    <sourcepassword>$pws</sourcepassword>
+    <format>MP3</format>
+    <filename>/home/ice/music/playlist.txt</filename>
+    <stream_once>0</stream_once>
+    <svrinfoname>RADIO NAME</svrinfoname>
+    <svrinfourl>http://RADIODOMAIN.com</svrinfourl>
+    <svrinfogenre>RADIO Genre</svrinfogenre>
+    <svrinfodescription>Radio, Dubstep, Mix, Trap, Remix, Chill.</svrinfodescription>
+    <svrinfobitrate>128</svrinfobitrate>
+    <svrinfochannels>2</svrinfochannels>
+    <svrinfosamplerate>44100</svrinfosamplerate>
+    <shuffle>1</shuffle>
+    <svrinfopublic>0</svrinfopublic>
+</ezstream>
+EOF
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
