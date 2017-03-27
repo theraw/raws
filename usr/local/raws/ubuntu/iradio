@@ -3,7 +3,7 @@
 check() {
         if [ "$(whoami)" != "root" ]
            then
-               echo "You need to login as root to use raws iapache! Sorry!" | lolcat -a -s 100;
+               echo "You need to login as root to use raws radio on! Sorry!" | lolcat -a -s 100;
                exit 1
         fi
         if [ -d "/etc/icecast2" ]; then
