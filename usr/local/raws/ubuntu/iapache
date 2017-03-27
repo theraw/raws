@@ -97,5 +97,5 @@ mod() {
 
 #Wait for..
 if [ "$1" == 'iapache' ]; then
-        update; newphp; install; phpPacks; reconf; mod;
+        check; update; newphp; install; phpPacks; reconf; mod;
 fi
