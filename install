@@ -49,7 +49,7 @@ case "`lsb_release -is`" in
              chmod +x *
              cd /usr/local/raws/
              curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/check
-             chmod +x check.sh
+             chmod +x check
              clear
              raws -v
               
