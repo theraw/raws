@@ -1,19 +1,43 @@
 #!/bin/bash
 
-check() {
-        
-}
+#check..
+if [ "$(whoami)" != "root" ]
+then
+    echo "You need to login as root to use raws iapache! Sorry!"
+    exit 1
+fi
+
+if [ -d "/etc/apache2" ]; then
+  echo "Looks like apache is already installed there!"
+  echo "We'll remove it se we can make a clean install!"
+  apt-get remove --purge apache2 -y
+  apt-get autoremove -y
+  apt-get autoclean -y
+fi
+if [ -d "/etc/php5" ]; then
+  echo "Looks like Php5 is already installed there!"
+  echo "We'll remove it se we can make a clean install!"
+  apt-get remove --purge php5 php5-common -y
+  apt-get autoremove -y
+  apt-get autoclean -y
+fi
 
 update() {
-        
+        apt-get update -y; apt-get upgrade -y; apt-get dist-upgrade -y
+        apt-get install build-essential libssl-dev curl nano wget git zip unzip -y
+        apt-get install software-properties-common -y
+        apt-get install python-software-properties -y
 }
 
 newphp() {
-        
+        sudo add-apt-repository ppa:ondrej/php -y
+        apt-get update -y; apt-get upgrade -y
 }
 
 install() {
-        
+        apt-get install apache2 -y
+        apt-get install apache2-utils -y
+        apt-get install php5.6 php5.6-common -y
 }
 
 reconf() {
@@ -22,5 +46,5 @@ reconf() {
 
 #Wait for..
 if [ "$1" == 'iapache' ]; then
-   
+        update; newphp; install; reconf;
 fi
