@@ -46,7 +46,7 @@
 9. **`raws ilxd`**
 10. ~~**`raws iapache`** Will use php5.6 !~~ **Done.**
 11. **`raws radio on`** Open a Radio station !
-12. **`raws adel`** Delete the site which you used "**raws ahost**" to create.
+12. ~~**`raws adel`** Delete the site which you used "**raws ahost**" to create.~~ **Done.**
 13. **`raws ndel`** Delete the site which you used "**raws nhost**" to create.
 14. **`raws ts3 on`** Open a Teamspeak3 server!
 15. **`raws isql`** Will install phpmyadmin mysql server, cause if you install them as normal when you are using nginx, that will install apache and some other unneeded modules. so "raws isql" will install only mysql server and phpmyadmin in strict mode!.
