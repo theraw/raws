@@ -31,6 +31,7 @@ echo -e "||====================!VIRTUALHOSTS!========================||" | lolca
 echo -e "||= 1. $ raws ahost ex.com || Create virtualhost with Apache"   | lolcat -a -s 100;
 echo -e "||= 2. $ raws nhost ex.com || Create virtualhost with Nginx"    | lolcat -a -s 100;
 echo -e "||= 3. $ raws adel ex.com  || Remove Apache virtualhost     "   | lolcat -a -s 100;
+echo -e "||= 4. $ raws ndel ex.com  || Remove Nginx virtualhost      "   | lolcat -a -s 100;
 echo -e "||==========================================================||" | lolcat -a -s 100;
 echo -e "||==========================================================||" | lolcat -a -s 100;
 echo -e "||====================!APPS!================================||" | lolcat -a -s 100;
