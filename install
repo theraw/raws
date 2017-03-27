@@ -42,6 +42,7 @@ case "`lsb_release -is`" in
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/inginx
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/nhost
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/vnc
+             wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/iapache
              chmod +x *
              cd /usr/local/raws/
              wget https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/check
