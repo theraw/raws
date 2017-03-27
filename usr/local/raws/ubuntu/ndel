@@ -1,0 +1,17 @@
+#!/bin/bash
+
+delete() {
+        rm -Rf /hostdata/$2
+        rm -Rf /nginx/sites/$2
+        service nginx reload
+}
+
+if [ "$1" == 'ndel' ] || [ "$2" ]; then
+   delete $2
+   clear
+   echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
+   echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
+   echo -n " R.I.P $2  " | lolcat -a -s 100;
+   echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
+   echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
+fi
