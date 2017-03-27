@@ -6,7 +6,7 @@ d=/usr/local/raws/ubuntu
 . /usr/local/raws/check
 . $d/rv
 . $d/si
-. $d/install-apache2
+. $d/iapache
 . $d/ahost
 . $d/help
 . $d/imysql
