@@ -1,8 +1,8 @@
 <ezstream>
     <url>http://`curl -s api.ipify.org`:8000/stream</url>
-    <sourcepassword>$2</sourcepassword>
+    <sourcepassword>REPW</sourcepassword>
     <format>MP3</format>
-    <filename>/home/$1/music/playlist.txt</filename>
+    <filename>/home/ice/music/playlist.txt</filename>
     <stream_once>0</stream_once>
     <svrinfoname>RADIO NAME</svrinfoname>
     <svrinfourl>http://RADIODOMAIN.com</svrinfourl>
