@@ -91,24 +91,24 @@ reConF() {
         ho5="`hostname`"
         sed -i -e "s/owner@change.me/root@$ho5/g" /etc/icecast2/icecast.xml
         
-cat <<EOF > /home/ice/ezstream_mp3.xml
-<ezstream>
-    <url>http://`curl -s api.ipify.org`:8000/stream</url>
-    <sourcepassword>$pws</sourcepassword>
-    <format>MP3</format>
-    <filename>/home/ice/music/playlist.txt</filename>
-    <stream_once>0</stream_once>
-    <svrinfoname>RADIO NAME</svrinfoname>
-    <svrinfourl>http://RADIODOMAIN.com</svrinfourl>
-    <svrinfogenre>RADIO Genre</svrinfogenre>
-    <svrinfodescription>Radio, Dubstep, Mix, Trap, Remix, Chill.</svrinfodescription>
-    <svrinfobitrate>128</svrinfobitrate>
-    <svrinfochannels>2</svrinfochannels>
-    <svrinfosamplerate>44100</svrinfosamplerate>
-    <shuffle>1</shuffle>
-    <svrinfopublic>0</svrinfopublic>
-</ezstream>
-EOF
+        cat <<EOF > /home/ice/ezstream_mp3.xml
+        <ezstream>
+            <url>http://`curl -s api.ipify.org`:8000/stream</url>
+            <sourcepassword>$pws</sourcepassword>
+            <format>MP3</format>
+            <filename>/home/ice/music/playlist.txt</filename>
+            <stream_once>0</stream_once>
+            <svrinfoname>RADIO NAME</svrinfoname>
+            <svrinfourl>http://RADIODOMAIN.com</svrinfourl>
+            <svrinfogenre>RADIO Genre</svrinfogenre>
+            <svrinfodescription>Radio, Dubstep, Mix, Trap, Remix, Chill.</svrinfodescription>
+            <svrinfobitrate>128</svrinfobitrate>
+            <svrinfochannels>2</svrinfochannels>
+            <svrinfosamplerate>44100</svrinfosamplerate>
+            <shuffle>1</shuffle>
+            <svrinfopublic>0</svrinfopublic>
+        </ezstream>
+        EOF
 }
 
 
