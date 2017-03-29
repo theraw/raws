@@ -49,7 +49,8 @@ install() {
         clear
         echo "Starting... #Step 3." | lolcat -a -s 100;
         echo -n "Installing Apache2..." | lolcat -a -s 100; apt-get install apache2 -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
-        echo -n "Installing Apache2 Utils..." | lolcat -a -s 100; apt-get install apache2-utils -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
+        echo -n "Installing Apache2-Dev..." | lolcat -a -s 100; apt-get install apache2-dev -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
+        echo -n "Installing Apache2-Utils..." | lolcat -a -s 100; apt-get install apache2-utils -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
         echo -n "Installing php5.6..." | lolcat -a -s 100; apt-get install php5.6 php5.6-common -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
 }
 
