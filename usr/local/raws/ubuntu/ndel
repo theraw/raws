@@ -6,7 +6,7 @@ delete() {
         service nginx reload
 }
 
-if [ "$1" == 'ndel' ] || [ "$2" ]; then
+if [ "$1" == 'ndel' ] && [ "$2" ]; then
    delete $2
    clear
    echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
