@@ -19,3 +19,4 @@ d=/usr/local/raws/ubuntu
 . $d/nhost
 . $d/vnc
 . $d/adel
+. $d/ndel
