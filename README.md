@@ -14,6 +14,8 @@
 
 2. **Fixed,** **`raws info`**
 
+3. **Fixed,** **`raws iapache`** Now Using Php5.6
+
 ---
 
 1. **ADDED,** **`raws iyt`** which allow you to download and convert yt videos on .mp3 it's very simple 
@@ -26,6 +28,10 @@
 4. **ADDED,** **`raws nhost ex.com`** Create a virtualhost with nginx. (you know you can't use both nginx&apache in :80 xD)
 
 5. **ADDED,** **`raws switch`** Turn Your Ubuntu 14.04 server on desktop and connect it from [VNC Viewer](https://www.realvnc.com/download/viewer/)
+
+6. **ADDED,** **`raws adel`** Remove a virtualhost which you used **`raws ahost`** to create it.
+
+7. **ADDED,** **`raws ndel`** Remove a virtualhost which you used **`raws nhost`** to create it.
 
 ---
 
