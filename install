@@ -45,6 +45,7 @@ case "`lsb_release -is`" in
              curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/vnc
              curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/iapache
              curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/adel
+             curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/ndel
              echo "Done..."
              sleep 3
              chmod +x *
