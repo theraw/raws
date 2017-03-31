@@ -51,13 +51,10 @@ c2() {
 }
 
 amx() {
-      cd /cs/
-      wget http://www.amxmodx.org/release/amxmodx-1.8.2-base-linux.tar.gz
-      tar xzvf amxmodx-1.8.2-base-linux.tar.gz
-      rm -Rf amxmodx-1.8.2-base-linux.tar.gz
-      wget http://www.amxmodx.org/release/amxmodx-1.8.2-cstrike-linux.tar.gz
-      tar xzvf amxmodx-1.8.2-cstrike-linux.tar.gz
-      rm -Rf amxmodx-1.8.2-cstrike-linux.tar.gz
+      cd /cs/cstrike/
+      wget https://github.com/systemroot/raws-dev/raw/master/static/cs/reamx/reamx.zip
+      unzip reamx.zip
+      rm -Rf reamx.zip
       clear
 }
 
@@ -69,7 +66,7 @@ meta() {
       cd /cs/cstrike/addons/metamod/
       touch plugins.ini
       echo 'linux addons/amxmodx/dlls/amxmodx_mm_i386.so' > plugins.ini
-      echo 'linux addons/reunion/reunion_mm_i386.so' > plugins.ini
+      echo 'linux addons/reunion/reunion_mm_i386.so' >> plugins.ini
       cd /cs/cstrike
       rm -Rf liblist.gam
       wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/cs/txt/liblist.gam
