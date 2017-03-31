@@ -5,10 +5,13 @@ gci() {
       sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
       sudo apt-get update -y
       sudo apt-get autoremove -y; sudo apt-get update -y; sudo apt-get dist-upgrade -y;
-      sudo apt-get install gcc-4.9 g++-4.9 -y
-      sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.9
-      sudo apt-get install gcc-4.8 g++-4.8 -y
-      sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.8
+      apt-get install gcc-4.9 g++-4.9 cpp-4.9 -y
+      apt-get install gcc-4.9-locales g++-4.9-multilib libstdc++6-4.9-dbg gcc-4.9-multilib libgcc1-dbg libgomp1-dbg libitm1-dbg libatomic1-dbg libasan1-dbg liblsan0-dbg libtsan0-dbg libubsan0-dbg libcilkrts5-dbg libquadmath0-dbg lib32stdc++6-4.9-dbg libx32stdc++6-4.9-dbg -y
+      cd /usr/bin
+      rm gcc g++ cpp
+      ln -s gcc-4.9 gcc
+      ln -s g++-4.9 g++
+      ln -s cpp-4.9 cpp
       clear
 }
 
