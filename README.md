@@ -44,19 +44,18 @@
 1. ~~Fixing check mode when new version is out, problem is because you will not be able to read alert!~~ **Done.**
 2. ~~**`raws switch`** - Turn Your Ubuntu 14.04 Server To Ubuntu 14.04 Desktop, And manage it from VNC.~~ **Done.**
 3. Adding raws to official ubuntu repository, which means one day u'll be able to install raws like "apt-get install raws" .
-4. ~~**`raws cs-build`** To create a counter-strike 1.6 server, no like others. but official hlds + ReHlds + ReUnion + MetaMod + AmxModX.~~ Sorry can't add this there are some problems and rehlds wont run! if you know how to fix pr is accepted! http://shorted.me/luJRU
-5. ~~**`raws inginx`** To build nginx from source + a lot of modules and php 5.6 .~~ **Done.**
-6. ~~**`raws nhost example.com`** Creating a virtualhost with nginx.~~ **Done.**
-7. **`raws idocker`**
-8. **`raws ivagrant`**
-9. **`raws ilxd`**
-10. ~~**`raws iapache`** Will use php5.6 !~~ **Done.**
-11. **`raws radio on`** Open a Radio station !
-12. ~~**`raws adel`** Delete the site which you used "**raws ahost**" to create.~~ **Done.**
-13. **`raws ndel`** Delete the site which you used "**raws nhost**" to create.
-14. **`raws ts3 on`** Open a Teamspeak3 server!
-15. **`raws isql`** Will install phpmyadmin mysql server, cause if you install them as normal when you are using nginx, that will install apache and some other unneeded modules. so "raws isql" will install only mysql server and phpmyadmin in strict mode!.
-16. **`hot release!`** Version 1.0 of **`raws`** will be more strict. There will be a check who will check every command, example you try to install apache2 with raws, raws first will check if apache exist and will delete it then will install apache again. This check will not be just for apache but for everything!
+4. ~~**`raws inginx`** To build nginx from source + a lot of modules and php 5.6 .~~ **Done.**
+5. ~~**`raws nhost example.com`** Creating a virtualhost with nginx.~~ **Done.**
+6. **`raws idocker`**
+7. **`raws ivagrant`**
+8. **`raws ilxd`**
+9. ~~**`raws iapache`** Will use php5.6 !~~ **Done.**
+10. **`raws radio on`** Open a Radio station !
+11. ~~**`raws adel`** Delete the site which you used "**raws ahost**" to create.~~ **Done.**
+12. **`raws ndel`** Delete the site which you used "**raws nhost**" to create.
+13. **`raws ts3 on`** Open a Teamspeak3 server!
+14. **`raws isql`** Will install phpmyadmin mysql server, cause if you install them as normal when you are using nginx, that will install apache and some other unneeded modules. so "raws isql" will install only mysql server and phpmyadmin in strict mode!.
+15. **`hot release!`** Version 1.0 of **`raws`** will be more strict. There will be a check who will check every command, example you try to install apache2 with raws, raws first will check if apache exist and will delete it then will install apache again. This check will not be just for apache but for everything!
 
 ## How to remove.
 Old version 0.5 - 0.6 was something like beta. 
