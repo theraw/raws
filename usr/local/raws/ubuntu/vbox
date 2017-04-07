@@ -1,0 +1,32 @@
+#!/bin/bash
+# USE THIS AS ROOT!!
+# Some Time this fail with auto install ./ex.sh so waste some time and execute commands one by one!
+apt-get update -y; apt-get upgrade -y
+apt-get install libssl-dev build-essential nfs-kernel-server -y
+echo "deb http://download.virtualbox.org/virtualbox/debian oneiric non-free" >> /etc/apt/sources.list.d/virtualbox.list
+echo "deb http://download.virtualbox.org/virtualbox/debian trusty contrib non-free" >> /etc/apt/sources.list.d/virtualbox.list
+apt-get update -y; apt-get upgrade -y
+sudo apt-get build-dep linux-image-generic -y
+apt-get install virtualbox-5.1 -y
+apt-get install dkms -y
+mkdir ~/work
+cd ~/work
+KERN_VERSION=$(uname -r |cut -d'-' -f1)
+CORES=$(cat /proc/cpuinfo|grep vendor_id|wc -l)
+wget https://www.kernel.org/pub/linux/kernel/v4.x/linux-${KERN_VERSION}.tar.xz
+tar xf linux-${KERN_VERSION}.tar.xz
+zcat /proc/config.gz > linux-${KERN_VERSION}/.config
+cd ~/work/linux-4.*
+make -j${CORES}
+export KERN_DIR=~/work/linux-${KERN_VERSION}/
+/sbin/rcvboxdrv setup
+echo "AUTODELETING WORK DIR!"
+rm -Rf ~/work
+
+# Vagrant example. needed vagrant 1.8.6, because older;s doesn't support virtualbox 5.1
+wget https://releases.hashicorp.com/vagrant/1.8.6/vagrant_1.8.6_x86_64.deb
+dpkg -i vagrant_1.8.6_x86_64.deb
+rm -Rf vagrant_1.8.6_x86_64.deb
+vagrant box add ubuntu/trusty64
+vagrant init ubuntu/trusty64
+vagrant up --provider=virtualbox
