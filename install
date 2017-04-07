@@ -57,7 +57,7 @@ deP() {
        sleep 5
        apt-get install build-essential lshw ruby git nano curl zip unzip python -y
        cd /opt
-       curl -s -O https://github.com/busyloop/lolcat/archive/master.zip
+       wget https://github.com/busyloop/lolcat/archive/master.zip
        unzip master.zip
        rm -Rf /opt/master.zip
        cd /opt/lolcat-master/
