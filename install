@@ -46,7 +46,7 @@ OS() {
        then
            echo "Seems like your system isn't Ubuntu 14.04!"
            echo "If so we can't install raws there!"
-           echo "If Your OS is Ubuntu 14.04 And Raws Fail, Then Please Raport it on github!"
+           echo "If Your OS is Ubuntu 14.04 And Raws Fail, Then Please Report it on github issues!"
            exit 1
        fi
 }
