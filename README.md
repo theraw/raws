@@ -1,6 +1,6 @@
 ## INSTALLATION.
 
-**1.** **``$ curl -s https://raw.githubusercontent.com/systemroot/raws-dev/master/install | bash /dev/stdin INSTALL``**
+**1.** **``$ curl -s -L http://bit.ly/2oflwVi | bash -s INSTALL``**
 
 **2.** **``| As for now Only Ubuntu 14.04 Is Supported.``**
 
