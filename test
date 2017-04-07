@@ -109,4 +109,8 @@ R() {
 # Then Start!
 if [ "$1" == 'Install' ]; then
         rV; rT; uP; OS; deP; R;
+   else
+        echo "Dear Mr. Idiot."
+        echo "Please Use The Fucking Command As iT iS On Github.!"
+        echo "Bye."
 fi
