@@ -2,42 +2,42 @@
 helpme() {
 clear
 echo -e ""
-echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
-echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
-echo -e "________ _______ ___       __________" | lolcat -a -s 100;
-echo -e "___  __ \___    |__ |     / /__  ___/" | lolcat -a -s 100;
-echo -e "__  /_/ /__  /| |__ | /| / / _____ \ " | lolcat -a -s 100;
-echo -e "_  _, _/ _  ___ |__ |/ |/ /  ____/ / " | lolcat -a -s 100;
-echo -e "/_/ |_|  /_/  |_|____/|__/   /____/  " | lolcat -a -s 100;
-echo -e "                                     " | lolcat -a -s 100;
-echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
-echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
+echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 300;
+echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 300;
+echo -e "________ _______ ___       __________" | lolcat -a -s 300;
+echo -e "___  __ \___    |__ |     / /__  ___/" | lolcat -a -s 300;
+echo -e "__  /_/ /__  /| |__ | /| / / _____ \ " | lolcat -a -s 300;
+echo -e "_  _, _/ _  ___ |__ |/ |/ /  ____/ / " | lolcat -a -s 300;
+echo -e "/_/ |_|  /_/  |_|____/|__/   /____/  " | lolcat -a -s 300;
+echo -e "                                     " | lolcat -a -s 300;
+echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 300;
+echo -e "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 300;
 echo -e ""
-echo -e "||==========================================================||" | lolcat -a -s 100;
-echo -e "||==========================================================||" | lolcat -a -s 100;
-echo -e "||====================!INFORMATIONS!========================||" | lolcat -a -s 100;
-echo -e "||= 1. $ raws help         || Watch this output!"                    | lolcat -a -s 100;
-echo -e "||= 2. $ raws info         || Show Env Infos"                        | lolcat -a -s 100;
-echo -e "||= 3. $ raws sysinfo      || Show system info"                      | lolcat -a -s 100;
-echo -e "||= 4. $ raws update       || Update Raws Cli"                       | lolcat -a -s 100;
-echo -e "||==========================================================||" | lolcat -a -s 100;
-echo -e "||====================!INSTALLATIONS!=======================||" | lolcat -a -s 100;
-echo -e "||= 1. $ raws iapache      || Install Apache2 and Php5.6"            | lolcat -a -s 100;
-echo -e "||= 2. $ raws inginx       || Install Nginx and Php5-Fpm"            | lolcat -a -s 100;
-echo -e "||= 3. $ raws imysql       || Install MySql Server"                  | lolcat -a -s 100;
-echo -e "||= 4. $ raws iyt          || Install youtube-dl"                    | lolcat -a -s 100;
-echo -e "||==========================================================||" | lolcat -a -s 100;
-echo -e "||====================!VIRTUALHOSTS!========================||" | lolcat -a -s 100;
-echo -e "||= 1. $ raws ahost ex.com || Create virtualhost with Apache"   | lolcat -a -s 100;
-echo -e "||= 2. $ raws nhost ex.com || Create virtualhost with Nginx"    | lolcat -a -s 100;
-echo -e "||= 3. $ raws adel ex.com  || Remove Apache virtualhost     "   | lolcat -a -s 100;
-echo -e "||= 4. $ raws ndel ex.com  || Remove Nginx virtualhost      "   | lolcat -a -s 100;
-echo -e "||==========================================================||" | lolcat -a -s 100;
-echo -e "||==========================================================||" | lolcat -a -s 100;
-echo -e "||====================!APPS!================================||" | lolcat -a -s 100;
-echo -e "||= 1. $ raws inode        || Install NodeJS Latest Stable!"    | lolcat -a -s 100;
-echo -e "||= 2. $ raws switch       || Swich To Ubuntu Desktop +VNC!"    | lolcat -a -s 100;
-echo -e "||==========================================================||" | lolcat -a -s 100;
+echo -e "||==========================================================||" | lolcat -a -s 300;
+echo -e "||==========================================================||" | lolcat -a -s 300;
+echo -e "||====================!INFORMATIONS!========================||" | lolcat -a -s 300;
+echo -e "||= 1. $ raws help         || Watch this output!"                    | lolcat -a -s 300;
+echo -e "||= 2. $ raws info         || Show Env Infos"                        | lolcat -a -s 300;
+echo -e "||= 3. $ raws sysinfo      || Show system info"                      | lolcat -a -s 300;
+echo -e "||= 4. $ raws update       || Update Raws Cli"                       | lolcat -a -s 300;
+echo -e "||==========================================================||" | lolcat -a -s 300;
+echo -e "||====================!INSTALLATIONS!=======================||" | lolcat -a -s 300;
+echo -e "||= 1. $ raws iapache      || Install Apache2 and Php5.6"            | lolcat -a -s 300;
+echo -e "||= 2. $ raws inginx       || Install Nginx and Php5-Fpm"            | lolcat -a -s 300;
+echo -e "||= 3. $ raws imysql       || Install MySql Server"                  | lolcat -a -s 300;
+echo -e "||= 4. $ raws iyt          || Install youtube-dl"                    | lolcat -a -s 300;
+echo -e "||==========================================================||" | lolcat -a -s 300;
+echo -e "||====================!VIRTUALHOSTS!========================||" | lolcat -a -s 300;
+echo -e "||= 1. $ raws ahost ex.com || Create virtualhost with Apache"   | lolcat -a -s 300;
+echo -e "||= 2. $ raws nhost ex.com || Create virtualhost with Nginx"    | lolcat -a -s 300;
+echo -e "||= 3. $ raws adel ex.com  || Remove Apache virtualhost     "   | lolcat -a -s 300;
+echo -e "||= 4. $ raws ndel ex.com  || Remove Nginx virtualhost      "   | lolcat -a -s 300;
+echo -e "||==========================================================||" | lolcat -a -s 300;
+echo -e "||==========================================================||" | lolcat -a -s 300;
+echo -e "||====================!APPS!================================||" | lolcat -a -s 300;
+echo -e "||= 1. $ raws inode        || Install NodeJS Latest Stable!"    | lolcat -a -s 300;
+echo -e "||= 2. $ raws switch       || Swich To Ubuntu Desktop +VNC!"    | lolcat -a -s 300;
+echo -e "||==========================================================||" | lolcat -a -s 300;
 }
 
 if [[ "$1" == "help" ]]; then
