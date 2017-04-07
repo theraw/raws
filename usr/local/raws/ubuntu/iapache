@@ -31,18 +31,7 @@ update() {
         echo -n "Ugrading System..." | lolcat -a -s 100; apt-get upgrade -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
         echo -n "Ugrading System2..." | lolcat -a -s 100; apt-get dist-upgrade -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
         echo -n "Installing Basic Packs..." | lolcat -a -s 100; apt-get install build-essential libssl-dev curl nano wget git zip unzip -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
-        echo -n "Installing PPA..." | lolcat -a -s 100; apt-get install software-properties-common -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
-        echo -n "Installing PPA2..." | lolcat -a -s 100; apt-get install python-software-properties -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
         echo -n "Removing What Isn't Needed!..." | lolcat -a -s 100; apt-get autoremove -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
-}
-
-newphp() {
-        clear
-        echo "Starting... #Step 2." | lolcat -a -s 100;
-        echo -n "Using php5.6 PPA..." | lolcat -a -s 100; sudo add-apt-repository ppa:ondrej/php -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
-        echo -n "Updating Repo!..." | lolcat -a -s 100; apt-get update -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
-        echo -n "Updating Repo2!..." | lolcat -a -s 100; apt-get upgrade -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
-        apt-get autoremove -y
 }
 
 install() {
@@ -51,19 +40,12 @@ install() {
         echo -n "Installing Apache2..." | lolcat -a -s 100; apt-get install apache2 -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
         echo -n "Installing Apache2-Dev..." | lolcat -a -s 100; apt-get install apache2-dev -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
         echo -n "Installing Apache2-Utils..." | lolcat -a -s 100; apt-get install apache2-utils -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
-        echo -n "Installing php5.6..." | lolcat -a -s 100; apt-get install php5.6 php5.6-common -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
+        echo -n "Installing php5..." | lolcat -a -s 100; apt-get install php5 php5-common -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
 }
 
 phpPacks() {
         clear
-        echo "Starting... #Step 4." | lolcat -a -s 100;
-        echo -n "Installing php5.6 Packs1..." | lolcat -a -s 100; apt-get install rrdtool libapache2-mod-php5.6 php5.6-cgi php5.6-cli php5.6-phpdbg libphp5.6-embed php5.6-dev -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
-        echo -n "Installing php5.6 Packs2..." | lolcat -a -s 100; apt-get install php5.6-rrd php5.6-curl php-pear php5.6-gd php5.6-imap php5.6-intl php5.6-ldap hp5.6-mysql php5.6-pgsql -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
-        echo -n "Installing php5.6 Packs3..." | lolcat -a -s 100; apt-get install php5.6-pspell php5.6-recode php5.6-sqlite3 php5.6-sybase php5.6-tidy php5.6-json -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
-        echo -n "Installing php5.6 Packs4..." | lolcat -a -s 100; apt-get install php5.6-bz2 php5.6-mcrypt php5.6-odbc php5.6-readline php5.6-interbase hp5.6-xmlrpc -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
-        echo -n "Installing php5.6 Packs5..." | lolcat -a -s 100; apt-get install php5.6-enchant php5.6-gmp hp5.6-xsl php5.6-bcmath php5.6-mbstring php5.6-soap -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
-        echo -n "Installing php5.6 Packs6..." | lolcat -a -s 100; apt-get install php5.6-xml php5.6-zip php5.6-dba -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
-        echo -n "Removing php7..." | lolcat -a -s 100; apt-get remove php7.1-common -y >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
+        echo -n "Installing php5 Packs..." | lolcat -a -s 100; apt-get install -y libapache2-mod-php5 php5-cgi php5-cli php5-curl php5-dbg php5-dev php5-gd php5-gmp php5-json php5-ldap php5-mysql php5-odbc php5-pgsql php5-pspell php5-readline php5-recode php5-sqlite php5-tidy php5-xmlrpc php5-xsl libexpect-php5 libgv-php5 libow-php5 libphp-jpgraph libphp-jpgraph-examples libphp5-embed php5-adodb php5-apcu php5-enchant php5-exactimage php5-gdcm php5-gearman php5-geoip php5-gnupg php5-imagick php5-imap php5-interbase php5-intl php5-lasso php5-librdf php5-mapscript php5-mcrypt php5-memcache php5-memcached php5-midgard2 php5-ming php5-mongo php5-msgpack php5-oauth php5-pinba php5-ps php5-radius php5-redis php5-remctl php5-rrd php5-sasl php5-stomp php5-svn php5-sybase php5-tokyo-tyrant >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
 }
 
 reconf() {
@@ -81,6 +63,7 @@ m='
         curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/static/apache/index.html
         echo -n "Creating Host Dir..." | lolcat -a -s 100; mkdir /hostdata && chmod -R 755 /hostdata/ >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
         echo -n "Enabling Rewrite ..." | lolcat -a -s 100; sudo a2enmod rewrite >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
+        echo -n "Enabling Mcrypt ..." | lolcat -a -s 100; sudo php5enmod mcrypt >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
         echo -n "Restarting Apache2..." | lolcat -a -s 100; service apache2 restart >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
 }
 
@@ -88,7 +71,7 @@ mod() {
         clear
         echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
         echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
-        echo -n "|||||| Apache2 & Php5.6 Installed! ||||||||" | lolcat -a -s 100;
+        echo -n "|||||| Apache2 & Php5 Installed! ||||||||" | lolcat -a -s 100;
         echo -n "|||||| To Host A Domain Execute -> ||||||||" | lolcat -a -s 100;
         echo -n "|||||| raws ahost example.com |||||||||||||" | lolcat -a -s 100;
         echo -n "|||||| Apache Vhost Dir Is /hostdata ||||||" | lolcat -a -s 100;
