@@ -1,8 +1,8 @@
-## Wanna Take A Look?
+## INSTALLATION.
 
-**1.** **``$ curl -s https://raw.githubusercontent.com/systemroot/raws-dev/master/install | bash -s --``**
+**1.** **``$ curl -s https://raw.githubusercontent.com/systemroot/raws-dev/master/install | bash /dev/stdin INSTALL``**
 
-**2.** **``$ raws help``**
+**2.** **``| As for now Only Ubuntu 14.04 Is Supported.``**
 
 ![](http://image.prntscr.com/image/931009a8a11543a8bd8c5c1a7a755dc9.png)
 
