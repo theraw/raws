@@ -67,6 +67,15 @@ m='
         echo -n "Restarting Apache2..." | lolcat -a -s 100; service apache2 restart >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
 }
 
+Mysql() {
+        clear
+        echo "Installing Mysql. You Now Will Be Asked To Set A Password For Mysql!" | lolcat -a -s 100;
+        sleep 5
+        apt-get install mysql-server mysql-client -y
+        apt-get install phpmyadmin -y
+        service apache2 restart
+}
+
 mod() {
         clear
         echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
@@ -81,5 +90,5 @@ mod() {
 
 #Wait for..
 if [ "$1" == 'iapache' ]; then
-        check; update; install; phpPacks; reconf; mod;
+        check; update; install; phpPacks; reconf; Mysql; mod;
 fi
