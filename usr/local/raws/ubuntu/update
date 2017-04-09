@@ -3,7 +3,7 @@ if [[ "`whoami`" == 'root' ]]; then
    rm -Rf /usr/local/raws
    rm -Rf /opt/lolcat*
    rm -Rf /bin/raws
-   curl -s https://raw.githubusercontent.com/systemroot/raws-dev/master/install | bash -s --
+   curl -s -LA "Raws InS" "http://bit.ly/2oflwVi" | bash -s INSTALL
 else 
    echo "Please Use This Command As Root!, You can do "sudo -i" to switch to root and re'run command :)" | lolcat -a -s 100;
 fi
