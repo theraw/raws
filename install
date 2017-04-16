@@ -95,6 +95,7 @@ R() {
        curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/iapache
        curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/adel
        curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/ndel
+       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/iapache-new
        chmod +x *
        cd /usr/local/raws/
        curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/check
