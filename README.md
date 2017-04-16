@@ -57,6 +57,8 @@
 14. **`raws isql`** Will install phpmyadmin mysql server, cause if you install them as normal when you are using nginx, that will install apache and some other unneeded modules. so "raws isql" will install only mysql server and phpmyadmin in strict mode!.
 15. **`raws iapache-new`** Install apache2 with php5.6.
 
+**I know this readme looks bad :confused: but it's just to remember wat i was planning to do xp.**
+
 ## How to remove.
 Old version 0.5 - 0.6 was something like beta. 
 so on that wasn't "raws bye" ready yet so you need to delete it manually like
