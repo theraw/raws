@@ -97,6 +97,6 @@ mod() {
 }
 
 #Wait for..
-if [ "$1" == 'iapache' ]; then
+if [ "$1" == 'iapache-new' ]; then
         check; update; newphp; install; phpPacks; reconf; mod;
 fi
