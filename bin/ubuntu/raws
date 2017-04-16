@@ -20,3 +20,4 @@ d=/usr/local/raws/ubuntu
 . $d/vnc
 . $d/adel
 . $d/ndel
+. $d/iapache-new
