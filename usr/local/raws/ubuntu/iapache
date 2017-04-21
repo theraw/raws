@@ -10,14 +10,14 @@ fi
 
 if [ -d "/etc/apache2" ]; then
   echo "Looks like apache is already installed there!" | lolcat -a -s 100;
-  echo "We'll remove it se we can make a clean install!" | lolcat -a -s 100;
+  echo "We'll remove it so we can make a clean install!" | lolcat -a -s 100;
   apt-get remove --purge apache2 -y
   apt-get autoremove -y
   apt-get autoclean -y
 fi
 if [ -d "/etc/php5" ]; then
   echo "Looks like Php5 is already installed there!" | lolcat -a -s 100;
-  echo "We'll remove it se we can make a clean install!" | lolcat -a -s 100;
+  echo "We'll remove it so we can make a clean install!" | lolcat -a -s 100;
   apt-get remove --purge php5 php5-common -y
   apt-get autoremove -y
   apt-get autoclean -y
