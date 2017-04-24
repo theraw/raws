@@ -23,4 +23,8 @@ genit() {
 
 if [ "$1" == 'gen-ssl' ] && [ "$2" ]; then
       check $2; genit $2;
+      clear
+      echo "Certificate Is Generated And Stored At" | lolcat -a -s 100;
+      echo "/etc/letsencrypt/live/$2" | lolcat -a -s 100;
+      echo "Use your crt in vhost conf and start your webserver!" | lolcat -a -s 100;
 fi
