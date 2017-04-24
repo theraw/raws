@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # RAWS - SIMPLE LINUX CLI HELPER!
+# https://github.com/systemroot/raws-dev
 
 #Removing if is already installed.
 rV() {
