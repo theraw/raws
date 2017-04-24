@@ -18,6 +18,8 @@ genit() {
         service apache2 stop
         cd /ssl/
         ./letsencrypt-auto certonly --standalone -d $1 -d www.$1
+        cd /etc/letsencrypt/live/$1/
+        openssl dhparam -out dh2048.pem 2048
         clear
 }
 
@@ -27,5 +29,6 @@ if [ "$1" == 'gen-ssl' ] && [ "$2" ]; then
       echo "Certificate Is Generated And Stored At" | lolcat -a -s 100;
       echo "/etc/letsencrypt/live/$2/fullchain.pem" | lolcat -a -s 100;
       echo "/etc/letsencrypt/live/$2/privkey.pem" | lolcat -a -s 100;
+      echo "/etc/letsencrypt/live/$2/dh2048.pem" | lolcat -a -s 100;
       echo "Use your crt and privkey in vhost conf and start your webserver!" | lolcat -a -s 100;
 fi
