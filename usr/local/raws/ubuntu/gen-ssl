@@ -1,0 +1,26 @@
+#!/bin/bash
+
+check() {
+        if [ "$(whoami)" != "root" ]
+           then
+               echo "You need to login as root to use raws gen-ssl! Sorry!" | lolcat -a -s 100;
+               exit 1
+        fi
+        if [ -d "/etc/letsencrypt/live/$1" ]; then
+          echo "Looks like You Already Have Generate A SSL For $1!" | lolcat -a -s 100;
+          echo "Sorry We Can't Genereate A SSL For A Domain Which Already Have One!" | lolcat -a -s 100;
+          exit 1
+        fi
+}
+
+genit() {
+        service nginx stop
+        service apache2 stop
+        cd /ssl/
+        ./letsencrypt-auto certonly --standalone -d $1 -d www.$1
+        clear
+}
+
+if [ "$1" == 'gen-ssl' ] && [ "$2" ]; then
+      check $2; genit $2;
+fi
