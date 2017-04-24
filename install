@@ -69,6 +69,16 @@ deP() {
        sleep 3
 }
 
+# Installing LetsEncrypt in case if is needed.
+ssl() {
+       apt-get install openssl -y
+       git clone https://github.com/letsencrypt/letsencrypt
+       mv letsencrypt /ssl
+       cd /ssl
+       ./letsencrypt-auto --help
+       clear
+}
+
 #Installing Raws.
 R() {
        clear
@@ -110,7 +120,7 @@ R() {
 
 # Then Start!
 if [ "$1" == 'INSTALL' ]; then
-        rV; rT; uP; OS; deP; R;
+        rV; rT; uP; OS; deP; ssl; R;
    else
         echo "Dear Mr. IDIOT."
         echo "Please Use The Fucking Command As iT iS On Github.!"
