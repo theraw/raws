@@ -2,6 +2,7 @@ bye(){
 rm -Rf /usr/local/raws
 rm -Rf /bin/raws
 rm -Rf /opt/lolcat*
+rm -Rf /ssl
 }
 if [[ "$1" == 'bye' ]]; then
     clear
