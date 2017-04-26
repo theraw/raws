@@ -73,7 +73,7 @@
 
 Clear And Purge Everything
 
-**1.** **``$ raws bye*``**
+**1.** **``$ raws bye``**
 
 Remove Pack.
 
