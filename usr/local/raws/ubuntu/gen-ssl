@@ -17,6 +17,8 @@ genit() {
         service nginx stop
         service apache2 stop
         cd /ssl/
+        ./letsencrypt-auto --help
+        clear
         ./letsencrypt-auto certonly --standalone -d $1 -d www.$1
         cd /etc/letsencrypt/live/$1/
         openssl dhparam -out dh2048.pem 2048
