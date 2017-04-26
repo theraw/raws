@@ -2,10 +2,18 @@
 
 **1.** **``$ curl -s -LA "Raws InS" "http://bit.ly/2oflwVi" | bash -s INSTALL``**
 
-**2.** **``| As for now Only Ubuntu 14.04 Is Supported.``**
+**2.** **``|| As for now Only Ubuntu 14.04 Is Supported.``**
 
 ![](http://image.prntscr.com/image/931009a8a11543a8bd8c5c1a7a755dc9.png)
 
+
+## REPO! (Not Ready Yet.)
+
+**1.** **`apt-get install apt-transport-https`**
+
+**2.** **`echo "deb https://cdn.systemroot.me/repo/ubuntu/ trusty main" >> /etc/apt/sources.list`**
+
+**3.** **`apt-get install raws`**
 
 
 ## New.
