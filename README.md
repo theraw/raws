@@ -1,6 +1,6 @@
 ## INSTALLATION.
 
-**SUPPORTED OS:** `Ubuntu 14.04`
+**SUPPORTED OS:** `Ubuntu 14.04, Zorin OS.`
 
 **1.** **`apt-get install apt-transport-https`**
 
