@@ -11,7 +11,7 @@
 
 **1.** **`apt-get install apt-transport-https`**
 
-**2.** **`echo "deb https://cdn.systemroot.me/repo/ubuntu/ trusty main" >> /etc/apt/sources.list`**
+**2.** **`echo "deb https://cdn.systemroot.me/repo/ubuntu/ raw main" >> /etc/apt/sources.list`**
 
 **3.** **`apt-get install raws`**
 
