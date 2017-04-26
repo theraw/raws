@@ -6,7 +6,7 @@
 
 **3.** **`apt-get update; apt-get upgrade -y`**
 
-**5.** **`apt-get install build-essential libssl-dev openssl lshw ruby git nano curl zip unzip python -y`**
+**4.** **`apt-get install build-essential libssl-dev openssl lshw ruby git nano curl zip unzip python -y`**
 
 **5.** **`apt-get install raws`**
 
