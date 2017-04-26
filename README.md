@@ -70,11 +70,11 @@
 **I know this readme looks bad :confused: but it's just to remember what i was planning to do xp.**
 
 ## How to remove.
-Old version 0.5 - 0.6 was something like beta. 
-so on that wasn't "raws bye" ready yet so you need to delete it manually like
 
-**1.** **``$ rm -Rf /usr/local/raws; rm -Rf /bin/raws; rm -Rf /opt/lolcat*``**
+Clear And Purge Everything
 
-For version 0.7 and +, you can simply do
+**1.** **``$ raws bye*``**
 
-**1.** **``$ raws bye``**
+Remove Pack.
+
+**1.** **``$ apt-get remove raws -y``**
