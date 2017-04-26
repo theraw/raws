@@ -1,5 +1,7 @@
 ## INSTALLATION.
 
+**SUPPORTED OS:** `Ubuntu 14.04`
+
 **1.** **`apt-get install apt-transport-https`**
 
 **2.** **`echo "deb https://cdn.systemroot.me/repo/ubuntu/ raw main" >> /etc/apt/sources.list`**
