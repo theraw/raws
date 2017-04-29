@@ -77,4 +77,4 @@ Clear And Purge Everything
 
 Remove Pack.
 
-**1.** **``$ apt-get remove raws -y``**
+**1.** **``$ apt-get remove raws -y``** (Ignore errors!)
