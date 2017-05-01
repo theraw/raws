@@ -71,6 +71,7 @@ deP() {
 
 # Installing LetsEncrypt in case if is needed.
 ssl() {
+       mkdir /ssl
        apt-get install openssl -y
        git clone https://github.com/letsencrypt/letsencrypt
        mv letsencrypt /ssl
