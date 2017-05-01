@@ -16,21 +16,20 @@ check() {
 genit() {
         service nginx stop
         service apache2 stop
-        cd /ssl/
+        cd /ssl/letsencrypt
         ./letsencrypt-auto --help
+        ./certbot-auto --help
         clear
-        ./letsencrypt-auto certonly --standalone -d $1 -d www.$1
-        cd /etc/letsencrypt/live/$1/
-        openssl dhparam -out dh2048.pem 2048
+        ./certbot-auto certonly --standalone --email $3 -d $1
         clear
 }
 
-if [ "$1" == 'gen-ssl' ] && [ "$2" ]; then
-      check $2; genit $2;
+if [ "$1" == 'gen-ssl' ] && [ "$2" && "$3" ]; then
+      check $2; genit $2 $3;
       clear
       echo "Certificate Is Generated And Stored At" | lolcat -a -s 100;
       echo "/etc/letsencrypt/live/$2/fullchain.pem" | lolcat -a -s 100;
       echo "/etc/letsencrypt/live/$2/privkey.pem" | lolcat -a -s 100;
-      echo "/etc/letsencrypt/live/$2/dh2048.pem" | lolcat -a -s 100;
       echo "Use your crt and privkey in vhost conf and start your webserver!" | lolcat -a -s 100;
+      echo "We've Create a ssl cert only for '$2' you can use raws to create more ex 'raws gen-ssl www.$2'" | lolcat -a -s 100;
 fi
