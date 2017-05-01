@@ -75,8 +75,9 @@ ssl() {
        apt-get install openssl -y
        git clone https://github.com/letsencrypt/letsencrypt
        mv letsencrypt /ssl
-       cd /ssl
+       cd /ssl/letsencrypt
        ./letsencrypt-auto --help
+       ./certbot-auto --help
        clear
 }
 
