@@ -20,11 +20,11 @@ genit() {
         ./letsencrypt-auto --help
         ./certbot-auto --help
         clear
-        ./certbot-auto certonly --standalone --email $3 -d $1
+        ./certbot-auto certonly --standalone --email $2 -d $1
         clear
 }
 
-if [ "$1" == 'gen-ssl' ] && [ "$2" && "$3" ]; then
+if [ "$1" == 'gen-ssl' ] && [ "$2" ] && [ "$3" ]; then
       check $2; genit $2 $3;
       clear
       echo "Certificate Is Generated And Stored At" | lolcat -a -s 100;
