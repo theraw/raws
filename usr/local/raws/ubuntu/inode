@@ -14,7 +14,7 @@ sleep 5
 clear
 echo -n "Clearing Cache..." | lolcat -a -s 100; npm cache clean -f >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
 clear
-echo -n "Installing n..." | lolcat -a -s 100; npm install -g n >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
+echo -n "Installing n..." | lolcat -a -s 100; mkdir /tmp; cd /tmp; npm install -g n >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
 echo -n "Installing Node 6.9.0..." | lolcat -a -s 100; n 6.9.0 >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
 clear
 echo -n "Updating node bin..." | lolcat -a -s 100; sudo ln -sf /usr/local/n/versions/node/6.9.0/bin/node /usr/bin/node >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
