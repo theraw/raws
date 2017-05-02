@@ -22,12 +22,12 @@ cd /CK/linux-4.*
 make -j${CORES}
 export KERN_DIR=/CK/linux-${KERN_VERSION}/
 /sbin/rcvboxdrv setup
-
+echo "We're Done!"
 
 # Vagrant example. needed vagrant 1.8.6, because older;s doesn't support virtualbox 5.1
-wget https://releases.hashicorp.com/vagrant/1.8.6/vagrant_1.8.6_x86_64.deb
-dpkg -i vagrant_1.8.6_x86_64.deb
-rm -Rf vagrant_1.8.6_x86_64.deb
-vagrant box add ubuntu/trusty64
-vagrant init ubuntu/trusty64
-vagrant up --provider=virtualbox
+#wget https://releases.hashicorp.com/vagrant/1.8.6/vagrant_1.8.6_x86_64.deb
+#dpkg -i vagrant_1.8.6_x86_64.deb
+#rm -Rf vagrant_1.8.6_x86_64.deb
+#vagrant box add ubuntu/trusty64
+#vagrant init ubuntu/trusty64
+#vagrant up --provider=virtualbox
