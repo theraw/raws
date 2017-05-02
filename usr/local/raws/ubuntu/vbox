@@ -8,7 +8,8 @@ echo "deb http://download.virtualbox.org/virtualbox/debian trusty contrib non-fr
 apt-get update -y; apt-get upgrade -y
 sudo apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 54422A4B98AB5139
 apt-get update -y; apt-get upgrade -y
-sudo apt-get build-dep linux-image-generic -y
+apt-get install linux-image-generic -y
+#build-dep
 apt-get install virtualbox-5.1 -y
 apt-get install dkms -y
 mkdir /CK
