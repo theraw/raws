@@ -30,8 +30,9 @@ if [ "$1" == 'gen-ssl' ] && [ "$2" ] && [ "$3" ]; then
       check $2; genit $2 $3;
       clear
       echo "Certificate Is Generated And Stored At" | lolcat -a -s 100;
-      echo "/etc/letsencrypt/live/$2/fullchain.pem" | lolcat -a -s 100;
-      echo "/etc/letsencrypt/live/$2/privkey.pem" | lolcat -a -s 100;
+      echo "/hostdata/$2/ssl/fullchain.pem" | lolcat -a -s 100;
+      echo "/hostdata/$2/ssl/privkey.pem" | lolcat -a -s 100;
+      echo "As symlink. Real path is at /etc/letsencrypt/archive/$2/" | lolcat -a -s 100;
       echo "Use your crt and privkey in vhost conf and start your webserver!" | lolcat -a -s 100;
       echo "We've Create a ssl cert only for '$2' you can use raws to create more ex 'raws gen-ssl www.$2'" | lolcat -a -s 100;
 fi
