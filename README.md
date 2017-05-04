@@ -71,10 +71,10 @@ If you use this script to install raws don't use "cdn.systemroot.me" 2 because c
 9. ~~**`raws iapache`** Will use php5.6 !~~ **Done.**
 10. **`raws radio on`** Open a Radio station !
 11. ~~**`raws adel`** Delete the site which you used "**raws ahost**" to create.~~ **Done.**
-12. **`raws ndel`** Delete the site which you used "**raws nhost**" to create.
+12. ~~**`raws ndel`** Delete the site which you used "**raws nhost**" to create.~~ **Done.**
 13. **`raws ts3 on`** Open a Teamspeak3 server!
 14. **`raws isql`** Will install phpmyadmin mysql server, cause if you install them as normal when you are using nginx, that will install apache and some other unneeded modules. so "raws isql" will install only mysql server and phpmyadmin in strict mode!.
-15. **`raws iapache-new`** Install apache2 with php5.6.
+15. ~~**`raws iapache-new`** Install apache2 with php5.6.~~ **Done.**
 
 **I know this readme looks bad :confused: but it's just to remember what i was planning to do xp.**
 
