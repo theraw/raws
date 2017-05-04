@@ -50,7 +50,7 @@ If you use this script to install raws don't use "cdn.systemroot.me" 2 because c
 
 7. **ADDED,** **`raws ndel`** Remove a virtualhost which you used **`raws nhost`** to create it.
 
-8. **ADDED,** **`raws gen-ssl`** "raws gen-ssl example.com" generates a SSL-Certificate by letsencrypt which is free.
+8. **ADDED,** **`raws gen-ssl`** "raws gen-ssl myemail@example.com example.com" generates a SSL-Certificate by letsencrypt which is free.
 
 ---
 
