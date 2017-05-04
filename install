@@ -57,11 +57,6 @@ deP() {
        echo "Installing Needed Packs!..."
        sleep 5
        apt-get install build-essential lshw ruby git nano curl zip unzip python -y
-       cd /opt
-       wget https://github.com/busyloop/lolcat/archive/master.zip
-       unzip master.zip
-       rm -Rf /opt/master.zip
-       cd /opt/lolcat-master/
        gem install lolcat
        echo "Done." | lolcat -a -s 100;
        clear
