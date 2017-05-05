@@ -10,7 +10,7 @@ rV() {
           echo "Removing..." | lolcat -a -s 100;
           rm -Rf /usr/local/raws
           rm -Rf /bin/raws
-          rm -Rf /opt/lolcat-master
+          rm -Rf /ssl
           echo "Done." | lolcat -a -s 100;
           clear
        fi
