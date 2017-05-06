@@ -16,24 +16,20 @@ check() {
 genit() {
         service nginx stop
         service apache2 stop
-        cd /ssl/letsencrypt
-        ./letsencrypt-auto --help
-        ./certbot-auto --help
-        clear
-        ./certbot-auto certonly --standalone --email $2 -d $1
-        mkdir -p /hostdata/$2/ssl
-        cp /ssl/dh2048.pem /hostdata/$2/ssl/
-        ln -s /etc/letsencrypt/archive/$2/* /hostdata/$2/ssl/
+        /ssl/letsencrypt/letsencrypt-auto certonly --standalone -d $1 -d www.$1
+        mkdir -p /hostdata/$1/ssl
+        cp /ssl/dh2048.pem /hostdata/$1/ssl/
+        cp /etc/letsencrypt/live/$1/* /hostdata/$1/ssl/
         clear
 }
 
-if [ "$1" == 'gen-ssl' ] && [ "$2" ] && [ "$3" ]; then
-      check $2; genit $2 $3;
+if [ "$1" == 'gen-ssl' ] && [ "$2" ]; then
+      check $2; genit $2;
       clear
       echo "Certificate Is Generated And Stored At" | lolcat -a -s 100;
       echo "/hostdata/$2/ssl/fullchain.pem" | lolcat -a -s 100;
       echo "/hostdata/$2/ssl/privkey.pem" | lolcat -a -s 100;
       echo "As symlink. Real path is at /etc/letsencrypt/archive/$2/" | lolcat -a -s 100;
       echo "Use your crt and privkey in vhost conf and start your webserver!" | lolcat -a -s 100;
-      echo "We've Create a ssl cert only for '$2' you can use raws to create more ex 'raws gen-ssl email@ex.com www.$2'" | lolcat -a -s 100;
+      echo "We've Create a ssl cert only for '$2' you can use raws to create more ex 'raws gen-ssl example.com'" | lolcat -a -s 100;
 fi
