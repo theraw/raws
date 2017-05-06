@@ -22,6 +22,7 @@ genit() {
         clear
         ./certbot-auto certonly --standalone --email $2 -d $1
         mkdir -p /hostdata/$2/ssl
+        cp /ssl/dh2048.pem /hostdata/$2/ssl/
         ln -s /etc/letsencrypt/archive/$2/* /hostdata/$2/ssl/
         clear
 }
