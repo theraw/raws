@@ -73,6 +73,7 @@ ssl() {
        cd /ssl/letsencrypt
        ./letsencrypt-auto --help
        ./certbot-auto --help
+       openssl dhparam -out /ssl/dh2048.pem -outform PEM -2 2048
        clear
 }
 
