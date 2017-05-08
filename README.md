@@ -2,24 +2,8 @@
 
 **SUPPORTED OS:** `Ubuntu 14.04, Zorin OS.`
 
-**1.** **`apt-get install apt-transport-https`**
+* **`curl -s -LA "Raws InS" "http://bit.ly/2oflwVi" | bash -s INSTALL`**
 
-**2.** **`echo "deb https://cdn.systemroot.me/repo/ubuntu/ raw main" >> /etc/apt/sources.list`**
-
-**3.** **`apt-get update; apt-get upgrade -y`**
-
-**4.** **`apt-get install build-essential libssl-dev openssl lshw ruby git nano curl zip unzip python -y`**
-
-**5.** **`apt-get install raws`**
-
----
-
-Remember. Installation from my repo will not be latest version like this which is on github. my script will be updated on github then when i'm ready for new version i'll push it on my repo (cdn.systemroot.me) .
-So if you'll like to get latest use this command
-
-**`curl -s -LA "Raws InS" "http://bit.ly/2oflwVi" | bash -s INSTALL`**
-
-If you use this script to install raws don't use "cdn.systemroot.me" 2 because can make conflicts.
 
 
 ![](http://image.prntscr.com/image/931009a8a11543a8bd8c5c1a7a755dc9.png)
