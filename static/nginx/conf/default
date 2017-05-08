@@ -11,14 +11,36 @@ server {
           try_files $uri $uri/ =404;
         }
 
-        # STATS
+        # =========================================
+        # SERVER STATS.
+        # =========================================
         location /status {
-          vhost_traffic_status_display;
-          vhost_traffic_status_display_format html;
+         vhost_traffic_status_display;
+         vhost_traffic_status_display_format html;
         }
-        # END STATS
+        # =========================================
+        # END SERVER-STATS.
+        # =========================================
+
+        # =========================================
+        # PHPMYADMIN.
+        # =========================================
+        location /phpmyadmin {
+           location ~ ^/phpmyadmin/(.+\.php)$ {
+                   try_files $uri =404;
+                   fastcgi_pass 127.0.0.1:9000;
+                   fastcgi_index index.php;
+                   fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+                   include /etc/nginx/fastcgi_params;
+           }
+        }
+        # =========================================
+        # END PHPMYADMIN.
+        # =========================================
         
+        # =========================================
         # AV.
+        # =========================================
         location /gen {
           avatars_gen;
           avatars_gen_size 300;
@@ -26,8 +48,13 @@ server {
           avatars_gen_font_face "Liberation Sans Narrow";
           avatars_gen_font_bold on;
         }
-        #END AV.
+        # =========================================
+        # END AV.
+        # =========================================
 
+        # =========================================
+        # PHP.
+        # =========================================
         location ~ \.php {
           try_files $uri /index.php =404;
           fastcgi_pass 127.0.0.1:9000;
@@ -35,4 +62,7 @@ server {
           fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
           include fastcgi_params;
          }
+        # =========================================
+        # END PHP.
+        # =========================================
 }
