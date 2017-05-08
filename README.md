@@ -50,13 +50,18 @@
 ---
 # Command list and what they do.
 
-**$** **`=================== SYSTEM ===================`** **$**
+**$** **`====================== SYSTEM ======================`** **$**
 1. **`raws help`**`=========>` `Read command list And a short explain.`
 2. **`raws update`**`=======>` `Update raws cli.`
-3. **`raws iapache`**`======>` `Install Apache2, Php5.`
-4. **`raws iapache-new`**`==>` `Install Apache2, Php5.6, Mysql.`
-5. **`raws inginx`**`=======>` `Compile Ngninx From Source With` [Those Modules](https://github.com/systemroot/my-nginx#modules) `+Php5.6`
-**$** **`==============================================`** **$**
+3. **`raws sysinfo`**`======>` `Infos about your system, neet, Cpu, Ram, Space.`
+**$** **`=====================================================`** **$**
+
+**$** **`=================== INSTALLATIONS ===================`** **$**
+1. **`raws iapache`**`======>` `Install Apache2, Php5.`
+2. **`raws iapache-new`**`==>` `Install Apache2, Php5.6, Mysql.`
+3. **`raws inginx`**`=======>` `Compile Ngninx From Source With` [Those Modules](https://github.com/systemroot/my-nginx#modules) `+Php5.6`
+**$** **`=====================================================`** **$**
+
 6. 
 7.
 
