@@ -22,3 +22,4 @@ d=/usr/local/raws/ubuntu
 . $d/ndel
 . $d/iapache-new
 . $d/gen-ssl
+. $d/isql
