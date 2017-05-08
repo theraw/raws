@@ -1,5 +1,7 @@
 ## INSTALLATION.
 
+Fist. Raws, is a simple Linux cli helper. Those are some simple scripts which can make some works easy. Also 'raws' is designed as i want and this means if you have install nginx like "apt-get install nginx" then if you will try to use 'raws nhost nginx.com' that will not work. Raws is designed to install nginx with different configs and creates virtualhosts configs with different configs. So if you'll like to use raws i suggest you to get a fresh server and use it. if you have something installed don't use raws because raws can remove or purge stuff which you have installed before, without your authorization!
+
 * **`curl -s -LA "Raws InS" "http://bit.ly/2oflwVi" | bash -s INSTALL`**
 
 * **SUPPORTED OS:** `Ubuntu 14.04, Zorin OS.`
@@ -7,32 +9,6 @@
 ![](http://image.prntscr.com/image/931009a8a11543a8bd8c5c1a7a755dc9.png)
 
 ---
-# NEW.
-
-1. **ADDED,** **`raws iyt`** which allow you to download and convert yt videos on .mp3 it's very simple 
-**`down https://www.youtube.com/watch?v=BuJtLePAcGw`**
-
-2. **ADDED,** **`raws inode`** install NodeJS Latest Stable!
-
-3. **ADDED,** **`raws inginx`** [Build Nginx + Php5.6 Fpm](https://github.com/systemroot/my-nginx)
-
-4. **ADDED,** **`raws nhost ex.com`** Create a virtualhost with nginx. (you know you can't use both nginx&apache in :80 xD)
-
-5. **ADDED,** **`raws switch`** Turn Your Ubuntu 14.04 server on desktop and connect it from [VNC Viewer](https://www.realvnc.com/download/viewer/)
-
-6. **ADDED,** **`raws adel`** Remove a virtualhost which you used **`raws ahost`** to create it.
-
-7. **ADDED,** **`raws ndel`** Remove a virtualhost which you used **`raws nhost`** to create it.
-
-8. **ADDED,** **`raws gen-ssl`** "raws gen-ssl example.com" generates a SSL-Certificate by letsencrypt which is free.
-
-9. **ADDED,** **`raws isql`** Which install phpmyadmin and mysql server. suggested to use when you install nginx with 'raws inginx' .
-
----
-
-* **Released,** `Installation script. Add Better installation way.`
-
-* **Released,** `Total Release, Removing .sh extension and more..`
 
 ## IN PROCESS.
 
