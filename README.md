@@ -6,10 +6,6 @@
 
 ![](http://image.prntscr.com/image/931009a8a11543a8bd8c5c1a7a755dc9.png)
 
-
----
----
-
 ---
 # NEW.
 
@@ -51,21 +47,30 @@
 # Command list and what they do.
 
 **$** **`====================== SYSTEM ======================`** **$**
-1. **`raws help`**`=========>` `Read command list And a short explain.`
-2. **`raws update`**`=======>` `Update raws cli.`
-3. **`raws sysinfo`**`======>` `Infos about your system, neet, Cpu, Ram, Space.`
+1. **`raws help`**`===========>` `Read command list And a short explain.`
+2. **`raws update`**`=========>` `Update raws cli.`
+3. **`raws sysinfo`**`========>` `Infos about your system, neet, Cpu, Ram, Space.`
 
 **$** **`=====================================================`** **$**
 
 **$** **`=================== INSTALLATIONS ===================`** **$**
-1. **`raws iapache`**`======>` `Install Apache2, Php5.`
-2. **`raws iapache-new`**`==>` `Install Apache2, Php5.6, Mysql.`
-3. **`raws inginx`**`=======>` `Compile Ngninx From Source With` [Those Modules](https://github.com/systemroot/my-nginx#modules) `+Php5.6`
+1. **`raws iapache`**`========>` `Install Apache2, Php5, Mysql, PhpMyAdmin.`
+2. **`raws iapache-new`**`====>` `Install Apache2, Php5.6,`
+3. **`raws inginx`**`=========>` `Compile Ngninx From Source With` [Those Modules](https://github.com/systemroot/my-nginx#modules) `+Php-fpm-5.6`
+4. **`raws inodejs`**`========>` `Installs NodeJS 6.9.0 + NPM.`
+5. **`raws iyt`**`============>` `Installs Youtube-DL, And Creates 'down' cli.`
+6. **`raws isql`**`===========>` `Installs Mysql And PhpMyAdmin - Suggested For Usage When You Install Nginx.`
 
 **$** **`=====================================================`** **$**
 
-6. 
-7.
+**$** **`=================== VIRTUALHOSTS ====================`** **$**
+1. **`raws ahost ex.com`**`===>` `Host a domain with Apache2, which you installed with 'raws iapache'.`
+2. **`raws adel ex.com`**`====>` `Delete domain 'ex.com' which you created with 'raws ahost'.`
+3. **`raws nhost ex.com`**`===>` `Host a domain with Nginx, Which you installed with 'raws inginx'.`
+4. **`raws ndel ex.com`**`====>` `Delete domain 'ex.com' which you created with 'raws nhost'.`
+5. **`raws gen-ssl ex.com`**`=>` `Generate a SSL certificate by letsencrypt for domain 'ex.com'.`
+
+**$** **`=====================================================`** **$**
 
 ---
 
