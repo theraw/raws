@@ -1,10 +1,8 @@
 ## INSTALLATION.
 
-**SUPPORTED OS:** `Ubuntu 14.04, Zorin OS.`
-
 * **`curl -s -LA "Raws InS" "http://bit.ly/2oflwVi" | bash -s INSTALL`**
 
-
+* **SUPPORTED OS:** `Ubuntu 14.04, Zorin OS.`
 
 ![](http://image.prntscr.com/image/931009a8a11543a8bd8c5c1a7a755dc9.png)
 
@@ -35,6 +33,8 @@
 7. **ADDED,** **`raws ndel`** Remove a virtualhost which you used **`raws nhost`** to create it.
 
 8. **ADDED,** **`raws gen-ssl`** "raws gen-ssl example.com" generates a SSL-Certificate by letsencrypt which is free.
+
+9. **ADDED,** **`raws isql`** Which install phpmyadmin and mysql server. suggested to use when you install nginx with 'raws inginx' .
 
 ---
 
