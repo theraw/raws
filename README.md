@@ -8,9 +8,6 @@
 
 
 ---
-# Command list and what they do.
-
-
 ---
 
 ---
@@ -49,6 +46,18 @@
 
 ... Wasn't What was you expecting? [Suggest iT Here!](https://github.com/systemroot/raws-dev/issues/new)
 
+
+---
+# Command list and what they do.
+
+1. **`raws help`**    | `Read command list And a short explain.`
+2. **`raws update`**  | `Update raws cli.`
+3. **`raws iapache`** | `Install Apache2, Php5.`
+4. **`raws inginx`**  | `Compile Ngninx From Source With [Those Modules](https://github.com/systemroot/my-nginx#modules) + Php5.6`
+5.
+6.
+
+---
 
 
 ## How to remove.
