@@ -57,9 +57,10 @@
 1. **`raws iapache`**`========>` `Install Apache2, Php5, Mysql, PhpMyAdmin.`
 2. **`raws iapache-new`**`====>` `Install Apache2, Php5.6,`
 3. **`raws inginx`**`=========>` `Compile Ngninx From Source With` [Those Modules](https://github.com/systemroot/my-nginx#modules) `+Php-fpm-5.6`
-4. **`raws inodejs`**`========>` `Installs NodeJS 6.9.0 + NPM.`
+4. **`raws inode`**`==========>` `Installs NodeJS 6.9.0 + NPM.`
 5. **`raws iyt`**`============>` `Installs Youtube-DL, And Creates 'down' cli.`
 6. **`raws isql`**`===========>` `Installs Mysql And PhpMyAdmin - Suggested For Usage When You Install Nginx.`
+7. **`raws switch`**`=========>` `Switch from Ubuntu 14.04 Server To Desktop and access it with` [VNC Viewer](https://www.realvnc.com/download/viewer/)
 
 **$** **`=====================================================`** **$**
 
