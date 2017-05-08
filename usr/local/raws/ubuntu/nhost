@@ -11,7 +11,7 @@ if [ "$1" == "nhost" ] && [ "$2" ]; then
    chown -R www-data:www-data /hostdata/$2/public_html
    chown -R www-data:www-data /hostdata/$2/public_html/*
    cd /nginx/sites/
-   wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/nginx/conf/template
+   curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/static/nginx/conf/template
    mv template $2
    sed -i -e "s/raws.com/$2/g" /nginx/sites/$2
    service nginx restart
@@ -22,6 +22,7 @@ if [ "$1" == "nhost" ] && [ "$2" ]; then
    echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
    echo -n " Domain : $2 " | lolcat -a -s 100;
    echo -n " Dir : /hostdata/$2/public_html " | lolcat -a -s 100;
+   echo -n " Config : /nginx/sites/$2 " | lolcat -a -s 100;
    echo -n " Visit http://$2 To verify the work." | lolcat -a -s 100;
    echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
    echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
