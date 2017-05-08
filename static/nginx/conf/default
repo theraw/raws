@@ -1,7 +1,7 @@
 server {
         listen 80 default_server;
         root /hostdata/default;
-        index index.html;
+        index index.php index.html;
         server_name localhost;
 
 
