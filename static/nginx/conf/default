@@ -3,6 +3,7 @@ server {
         root /hostdata/default;
         index index.php index.html;
         server_name localhost;
+        vhost_traffic_status off;
 
 
         location / {
