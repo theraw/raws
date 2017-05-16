@@ -58,12 +58,12 @@ server {
         # =========================================
         error_page 403 /custom_403.html;
          location = /custom_403.html {
-           return http://$server_name;
+           return http://$host;
          }
 
         error_page 404 /custom_404.html;
          location = /custom_404.html {
-           return http://$server_name;
+           return http://$host;
          }
         # =========================================
         # END 404/403.
