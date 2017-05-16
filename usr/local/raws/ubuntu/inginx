@@ -78,7 +78,9 @@ library() {
        cd /opt/nginx/modules/
        git clone http://luajit.org/git/luajit-2.0.git
        cd luajit-2.0/
-       make && sudo make install
+       make -j`nproc`
+       sudo make install
+       ldconfig
 }
 
 ng1nx() {
@@ -135,8 +137,9 @@ cat <<EOF > /opt/nginx/sources/nginx-1.9.7/build.sh
 --add-module=/opt/nginx/modules/nginx-http-rdns \
 --add-module=/opt/nginx/modules/lua-nginx-module \
 --add-module=/opt/nginx/modules/nginx-upload-progress-module
-make
+make -j`nproc`
 make install
+ldconfig
 EOF
 }
 
