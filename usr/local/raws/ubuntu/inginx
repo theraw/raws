@@ -159,6 +159,8 @@ php0() {
        service nginx stop
        sudo add-apt-repository ppa:ondrej/php -y
        apt-get update -y
+       sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4F4EA0AAE5267A6CExecuting: gpg --ignore-time-conflict --no-options --no-default-keyring --homedir /tmp/tmp.OLAzgRxuPn --no-auto-check-trustdb --trust-model always --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyring /etc/apt/trusted.gpg.d/rtcamp-nginx.gpg --keyserver keyserver.ubuntu.com --recv-keys 4F4EA0AAE5267A6C
+       apt-get update -y; apt-get dist-upgrade -y
        apt-get install php5.6-fpm -y
        cd /etc/php/5.6/fpm/
        rm -Rf php.ini
