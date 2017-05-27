@@ -18,12 +18,11 @@ if [ "$1" == "nhost" ] && [ "$2" ]; then
    echo -n " Work Done!" | lolcat -a -s 100;
    sleep 2
    clear
-   echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
-   echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
-   echo -n " Domain : $2 " | lolcat -a -s 100;
-   echo -n " Dir : /hostdata/$2/public_html " | lolcat -a -s 100;
-   echo -n " Config : /nginx/sites/$2 " | lolcat -a -s 100;
-   echo -n " Visit http://$2 To verify the work." | lolcat -a -s 100;
-   echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
-   echo -n "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" | lolcat -a -s 100;
+   echo -n "||=======================================================||" | lolcat -a -s 100;
+   echo -n "||=======================================================||" | lolcat -a -s 100;
+   echo -n "||======|| DOMAIN =>| $2                                   " | lolcat -a -s 100;
+   echo -n "||======|| CONFIG =>| /nginx/sites/$2                      " | lolcat -a -s 100;
+   echo -n "||======|| WEBDIR =>| /hostdata/$2/public_html/            " | lolcat -a -s 100;
+   echo -n "||=======================================================||" | lolcat -a -s 100;
+   echo -n "||=======================================================||" | lolcat -a -s 100;
 fi
