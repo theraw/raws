@@ -8,7 +8,7 @@ mysql() {
 admin() {
         cd /hostdata/default/
         wget https://files.phpmyadmin.net/phpMyAdmin/4.7.0/phpMyAdmin-4.7.0-all-languages.zip
-        unzip phpMyAdmin-4.7.0-all-languages.zip
+        unzip phpMyAdmin-4.7.0-all-languages.zip; rm -Rf phpMyAdmin-4.7.0-all-languages.zip
         mv phpMyAdmin-4.7.0-all-languages/ phpmyadmin
         chown -R www-data:www-data phpmyadmin/
         chown -R www-data:www-data phpmyadmin/*
