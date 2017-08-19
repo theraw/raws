@@ -24,24 +24,24 @@ echo -n "We Are Testing Your Internet Speed Please Wait..." | lolcat -a -s 100; 
 up=$(egrep "Upload:" ~/speed.txt)
 down=$(egrep "Download" ~/speed.txt)
 clear
-echo -n "|-------------------------------------------|" | lolcat -a -s 100
-echo -n "|**********|       ~SYSTEM~      |**********|" | lolcat -a -s 100
-echo -n "|*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*|" | lolcat -a -s 100
-echo -n "|**********| You Are Using.      |**********|" | lolcat -a -s 100
-echo -n "|**********| $distro. |**********|" | lolcat -a -s 100
-echo -n "|**********| $x.             |**********|" | lolcat -a -s 100
-echo -n "|**********| With  : $cpu CPU/s.    |**********|" | lolcat -a -s 100
-echo -n "|**********| Clock : $ck    |**********|" | lolcat -a -s 100
-echo -n "|**********| RAM   : $ram MB.  |**********|" | lolcat -a -s 100
-echo -n "|**********| $virt |*******|" | lolcat -a -s 100
-echo -n "|-------------------------------------------|" | lolcat -a -s 100
-echo -n "|-------------------------------------------|" | lolcat -a -s 100
-echo -n "|**********|      ~NETWORK~      |**********|" | lolcat -a -s 100
-echo -n "|*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*|" | lolcat -a -s 100
-echo -n "|**********| IP : $ip |*********|" | lolcat -a -s 100
-echo -n "|**********| $up |********|" | lolcat -a -s 100
-echo -n "|**********| $down |******|" | lolcat -a -s 100
-echo -n "|-------------------------------------------|" | lolcat -a -s 100
+echo -e "|-------------------------------------------|" | lolcat -a -s 100
+echo -e "|**********|       ~SYSTEM~      |**********|" | lolcat -a -s 100
+echo -e "|*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*|" | lolcat -a -s 100
+echo -e "|**********| You Are Using.      |**********|" | lolcat -a -s 100
+echo -e "|**********| $distro. |**********|" | lolcat -a -s 100
+echo -e "|**********| $x.             |**********|" | lolcat -a -s 100
+echo -e "|**********| With  : $cpu CPU/s.    |**********|" | lolcat -a -s 100
+echo -e "|**********| Clock : $ck    |**********|" | lolcat -a -s 100
+echo -e "|**********| RAM   : $ram MB.  |**********|" | lolcat -a -s 100
+echo -e "|**********| $virt |*******|" | lolcat -a -s 100
+echo -e "|-------------------------------------------|" | lolcat -a -s 100
+echo -e "|-------------------------------------------|" | lolcat -a -s 100
+echo -e "|**********|      ~NETWORK~      |**********|" | lolcat -a -s 100
+echo -e "|*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*|" | lolcat -a -s 100
+echo -e "|**********| IP : $ip |*********|" | lolcat -a -s 100
+echo -e "|**********| $up |********|" | lolcat -a -s 100
+echo -e "|**********| $down |******|" | lolcat -a -s 100
+echo -e "|-------------------------------------------|" | lolcat -a -s 100
 #Clear.
 rm -Rf ~/x.txt
 rm -Rf ~/mhz.txt
