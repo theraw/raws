@@ -26,9 +26,9 @@ genit() {
 if [ "$1" == 'gen-ssl' ] && [ "$2" ]; then
       check $2; genit $2;
       clear
-      echo "Certificate Is Generated And Stored At" | lolcat -a -s 100;
-      echo "/hostdata/$2/ssl/fullchain.pem" | lolcat -a -s 100;
-      echo "/hostdata/$2/ssl/privkey.pem" | lolcat -a -s 100;
-      echo "As symlink. Real path is at /etc/letsencrypt/archive/$2/" | lolcat -a -s 100;
-      echo "Use your crt and privkey in vhost conf and start your webserver!" | lolcat -a -s 100;
+      echo -e "Certificate Is Generated And Stored At" | lolcat -a -s 100;
+      echo -e "/hostdata/$2/ssl/fullchain.pem" | lolcat -a -s 100;
+      echo -e "/hostdata/$2/ssl/privkey.pem" | lolcat -a -s 100;
+      echo -e "As symlink. Real path is at /etc/letsencrypt/archive/$2/" | lolcat -a -s 100;
+      echo -e "Use your crt and privkey in vhost conf and start your webserver!" | lolcat -a -s 100;
 fi
