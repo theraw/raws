@@ -57,6 +57,7 @@ deP() {
        echo "Installing Needed Packs!..."
        sleep 5
        apt-get install build-essential bc systemd-services lshw ruby git nano curl zip unzip python -y
+       apt-get install software-properties-common python-software-properties -y
        gem install lolcat
        echo "Done." | lolcat -a -s 100;
        clear
