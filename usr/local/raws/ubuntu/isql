@@ -7,12 +7,19 @@ mysql() {
 
 admin() {
         cd /hostdata/default/
-        wget https://files.phpmyadmin.net/phpMyAdmin/4.7.0/phpMyAdmin-4.7.0-all-languages.zip
-        unzip phpMyAdmin-4.7.0-all-languages.zip; rm -Rf phpMyAdmin-4.7.0-all-languages.zip
-        mv phpMyAdmin-4.7.0-all-languages/ phpmyadmin
+        wget https://files.phpmyadmin.net/phpMyAdmin/4.7.4/phpMyAdmin-4.7.4-all-languages.zip
+        unzip phpMyAdmin-4.7.4-all-languages.zip; rm -Rf phpMyAdmin-4.7.4-all-languages.zip
+        mv phpMyAdmin-4.7.4-all-languages/ phpmyadmin
         chown -R www-data:www-data phpmyadmin/
         chown -R www-data:www-data phpmyadmin/*
         cd /hostdata/default/phpmyadmin/sql/
+        clear
+        echo "============================================="
+        echo "WE WILL IMPORT 'create_tables.sql' FILE INTO YOUR MYSQL SERVER"
+        echo "AND SO IS NEEDED TO WROTE YOUR PASSWORD OF MYSQL SERVER"
+        echo "PASSWORD IS SAFE EXECUTED COMMAND IS =>"
+        echo "mysql -u root -p < create_tables.sql"
+        echo "============================================="
         mysql -u root -p < create_tables.sql
         cd /hostdata/default/phpmyadmin/
 }
@@ -22,7 +29,7 @@ wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/nginx/p
 clear
 mv phpmyadmin.cconf /hostdata/default/phpmyadmin/config.inc.php
 
-echo "`openssl rand -base64 32`" > /hostdata/default/phpmyadmin/key.key
+echo "`date +%s | sha256sum | base64 | head -c 32 ; echo`" > /hostdata/default/phpmyadmin/key.key
 chkey="`cat /hostdata/default/phpmyadmin/key.key`"
 sed -i "s/changethekey/$chkey/" /hostdata/default/phpmyadmin/config.inc.php
 }
