@@ -2,7 +2,7 @@
 
 mysql() {
          apt-get update; apt-get upgrade -y
-         apt-get install mysql-server mysql-client -y
+         #apt-get install mysql-server mysql-client -y
 }
 
 admin() {
