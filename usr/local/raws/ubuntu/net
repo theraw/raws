@@ -1,9 +1,30 @@
 #!/bin/bash
 
-conn(){
+conn() {
   netstat -anp |grep 'tcp\|udp' | awk '{print $5}' | cut -d: -f1 | sort | uniq -c | sort -n
 }
 
+ban() {
+  ip route add blackhole $1
+}
+
+ban() {
+  ip route add blackhole $1
+}
+
+
+sban() {
+  route add -net $1 gw 127.0.0.1 lo
+}
+
+
+
 if [[ "$1" == "c" ]]; then
     conn;
+fi
+if [[ "$1" == "b" && "$2" ]]; then
+    ban $2;
+fi
+if [[ "$1" == "s" && "$2" ]]; then
+    sban $2;
 fi
