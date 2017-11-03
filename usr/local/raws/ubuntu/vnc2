@@ -1,1 +1,11 @@
 #!/bin/bash
+
+sudo apt-get update -y; sudo apt-get upgrade -y;
+sudo apt-get install build-essential libssl-dev curl nano wget zip unzip git iftop htop nmap -y
+sudo apt-get install ubuntu-gnome-desktop -y
+sudo apt-get install gnome-core -y
+sudo apt-get install gnome-shell -y
+sudo apt-get install xfonts-100dpi xfonts-100dpi-transcoded xfonts-75dpi xfonts-75dpi-transcoded xfonts-base -y
+sudo apt-get install vnc4server -y
+sudo mkdir ~/.vnc; cd ~/.vnc
+wget https://raw.githubusercontent.com/theraw/raws/master/static/vnc/x2; mv x2 xstartup; chmod +x xstartup
