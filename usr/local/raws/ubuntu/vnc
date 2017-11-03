@@ -13,6 +13,9 @@ switch() {
           sudo apt-get install unity-tweak-tool gnome-tweak-tool -y
           sudo apt-get install xfonts-100dpi xfonts-100dpi-transcoded xfonts-75dpi xfonts-75dpi-transcoded xfonts-base -y
           sudo apt-get install gnome-system-tools -y
+          sudo apt-get install linux-image-3.13.0-135-generic linux-image-extra-3.13.0-135-generic linux-headers-3.13.0-135 -y
+          sudo update-grub;
+          sudo apt-get autoremove -y
           
 
           mkdir ~/work
@@ -73,11 +76,12 @@ if [[ "$1" == "switch" ]]; then
    clear
    switch
    clear
-   echo "Installation Done" | lolcat -a -s 100;
-   echo "You now can start and connect to your server from vnc viewer!" | lolcat -a -s 100;
-   echo "You can start VNC like" | lolcat -a -s 100;
-   echo "vncserver -geometry 1920x1080"
-   echo "Then connect from vnc viewer on serverip:5901"
-   echo "Fist set a vnc password with command..."
-   echo "vncpasswd"
+   echo -e "INSTALLATION DONE!" | lolcat -a -s 100;
+   echo -e "WARN : PLEASE REBOOT YOUR SERVER BEFORE" | lolcat -a -s 100;
+   echo -e "You now can start and connect to your server from vnc viewer!" | lolcat -a -s 100;
+   echo -e "You can start VNC like" | lolcat -a -s 100;
+   echo -e "vncserver -geometry 1920x1080"
+   echo -e "Then connect from vnc viewer on serverip:5901"
+   echo -e "Fist set a vnc password with command..."
+   echo -e "vncpasswd"
 fi
