@@ -9,3 +9,45 @@ sudo apt-get install xfonts-100dpi xfonts-100dpi-transcoded xfonts-75dpi xfonts-
 sudo apt-get install vnc4server -y
 sudo mkdir ~/.vnc; cd ~/.vnc
 wget https://raw.githubusercontent.com/theraw/raws/master/static/vnc/x2; mv x2 xstartup; chmod +x xstartup
+sudo apt-get install synaptic gparted -y
+sudo apt-get install software-properties-common -y
+sudo apt-get install python3-software-properties -y
+sudo apt-get install python-software-properties -y
+sudo apt-get install unity-tweak-tool gnome-tweak-tool -y
+
+mkdir ~/work
+cd ~/work
+sudo add-apt-repository ppa:noobslab/themes -y
+sudo add-apt-repository ppa:upubuntu-com/icons -y
+sudo add-apt-repository ppa:numix/ppa -y
+sudo add-apt-repository ppa:papirus/papirus -y
+sudo add-apt-repository ppa:teejee2008/ppa -y
+sudo apt-get update -y
+sudo apt-get install numix-bluish-theme -y
+sudo apt-get install superflat-icon-theme -y
+sudo apt-get install papirus-icon-theme -y
+sudo apt-get install flatabulous-theme -y
+sudo apt-get install conky-manager -y
+sudo apt-get install numix-folders numix-icon-theme-circle numix-icon-theme-bevel numix-tools numix-plymouth-theme numix-wallpaper-aurora numix-icon-theme-square numix-wallpaper-lightbulb stylishdark-theme royal-gtk-theme numix-gtk-theme shimmer-themes -y
+sudo apt-get update -y
+sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder -y
+sudo apt-get update -y
+sudo apt-get install simplescreenrecorder simplescreenrecorder-lib -y
+sudo apt-get install vlc -y
+sudo apt-get install vlc browser-plugin-vlc -y
+sed -i 's/geteuid/getppid/' /usr/bin/vlc
+sudo apt-get install filezilla -y
+sudo apt-get install leafpad -y
+sudo apt-get install zip unzip curl audacity youtube-dl id3v2 mplayer -y
+cd ~/work
+wget https://github.com/zaggino/brackets-electron/releases/download/v1.10.3/brackets-electron_1.10.3_amd64.deb
+dpkg -i brackets-electron_1.10.3_amd64.deb
+rm -Rf ~/work
+mkdir -p /tmp
+cd /tmp
+wget rarlab.com/rar/rarlinux-x64-5.1.1.tar.gz
+tar -xzvf rarlinux-x64-5.1.1.tar.gz
+cd rar
+make
+sudo make install
+rm -Rf /tmp/*
