@@ -64,12 +64,12 @@ switch() {
           mkdir -p ~/.vnc
           cd ~/.vnc/
           rm -Rf xstartup
-          wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/vnc/xstartup
+          wget https://raw.githubusercontent.com/theraw/raws/master/static/vnc/xstartup
           chmod +x xstartup
           cd /root/
           mkdir Desktop/
           cd Desktop/
-          wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/vnc/Space-Desktop.jpg
+          wget https://raw.githubusercontent.com/theraw/raws/master/static/vnc/Space-Desktop.jpg
 }
 
 if [[ "$1" == "switch" ]]; then
