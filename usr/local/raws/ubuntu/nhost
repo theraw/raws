@@ -11,7 +11,7 @@ if [ "$1" == "nhost" ] && [ "$2" ]; then
    chown -R www-data:www-data /hostdata/$2/public_html
    chown -R www-data:www-data /hostdata/$2/public_html/*
    cd /nginx/sites/
-   curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/static/nginx/conf/template
+   curl -s -O https://raw.githubusercontent.com/theraw/raws/master/static/nginx/conf/template
    mv template $2
    sed -i -e "s/raws.com/$2/g" /nginx/sites/$2
    service nginx restart
