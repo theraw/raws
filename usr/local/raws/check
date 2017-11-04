@@ -1,5 +1,5 @@
 #!/bin/bash
-curl -s 'https://raw.githubusercontent.com/systemroot/raws-dev/master/releases' > /tmp/rv.txt
+curl -s 'https://raw.githubusercontent.com/theraw/raws/master/releases' > /tmp/rv.txt
 if [[ "`cat /tmp/rv.txt`" == '0.8' ]]; then
        rm -Rf /tmp/rv.txt
    else
