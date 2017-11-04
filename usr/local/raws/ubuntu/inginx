@@ -151,7 +151,7 @@ build() {
 
 fix() {
        mkdir -p /tmp/n
-       cd /tmp/n/; wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/nginx/fix; chmod +x fix
+       cd /tmp/n/; wget https://raw.githubusercontent.com/theraw/raws/master/static/nginx/fix; chmod +x fix
        sh fix
 }
 
@@ -164,16 +164,16 @@ php0() {
        apt-get install php5.6-fpm -y
        cd /etc/php/5.6/fpm/
        rm -Rf php.ini
-       wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/nginx/etc/php.ini
-       cd /bin; wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/nginx/etc/fpm; chmod +x fpm
+       wget https://raw.githubusercontent.com/theraw/raws/master/static/nginx/etc/php.ini
+       cd /bin; wget https://raw.githubusercontent.com/theraw/raws/master/static/nginx/etc/fpm; chmod +x fpm
        fpm restart
        cd /etc/php/5.6/fpm/pool.d/
        rm -Rf www.conf
-       wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/nginx/etc/www.conf
+       wget https://raw.githubusercontent.com/theraw/raws/master/static/nginx/etc/www.conf
        fpm restart
        service nginx restart
        cd /nginx/sites/; rm -Rf default
-       wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/nginx/conf/default
+       wget https://raw.githubusercontent.com/theraw/raws/master/static/nginx/conf/default
        service nginx restart
        fpm restart
 }
@@ -190,7 +190,7 @@ if [ "$1" == 'inginx' ]; then
    echo " We'll Execute Nginx -t and you can see if everything is working well" | lolcat -a -s 100;
    nginx -t
    echo " Nginx 1.9.7 And Php5.6 Fpm Is Installed" | lolcat -a -s 100;
-   echo " For more info https://github.com/systemroot/my-nginx" | lolcat -a -s 100;
+   echo " For more info https://github.com/theraw/my-nginx" | lolcat -a -s 100;
    echo " cat /bin/fpm to read php shortcuts" | lolcat -a -s 100;
    echo " You can search php5.6 packs by executing" | lolcat -a -s 100;
    echo " apt-cache search php5.6 | grep php5.6 "
