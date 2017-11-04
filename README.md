@@ -1,6 +1,6 @@
 # INSTALLATION.
 
-First. Raws, is a simple Linux cli helper. Those are some simple scripts which can make some works easy. Also 'raws' is designed as i want and this means if you have install nginx like "apt-get install nginx" then if you will try to use 'raws nhost nginx.com' that will not work. Raws is designed to install nginx with different configs and creates virtualhosts configs with different configs. So if you'll like to use raws i suggest you to get a fresh server and use it. if you have something installed don't use raws because raws can remove or purge stuff which you have installed before, without your authorization!
+First. Raws, is a simple Linux cli helper. Those are some simple scripts which can make some works easy. Also 'raws' is designed as i want and this means if you have install nginx like "apt-get install nginx" then if you will try to use 'raws nhost nginx.com' that will not work. Raws is designed to install nginx with different configs and creates virtualhosts configs with different configs. So if you'll like to use raws i suggest you to get a fresh server and use it. if you have something installed don't use raws because raws can remove or purge stuff which you have installed before, without your authorization! **Example if you have install apache2 before and you try to use 'raws iapache' raws will remove apache first then will install it again!**
 
 * **`curl -s -LA "Raws InS" "https://bit.ly/rawsINS" | bash -s INSTALL`**
 
