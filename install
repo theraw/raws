@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # RAWS - SIMPLE LINUX CLI HELPER!
-# https://github.com/systemroot/raws-dev
-# Short link of this http://bit.ly/rawsINS
+# https://github.com/theraw/raws
 
 #Removing if is already installed.
 rV() {
@@ -59,6 +58,8 @@ deP() {
        sleep 5
        apt-get install build-essential bc systemd-services lshw ruby git nano curl zip unzip python -y
        apt-get install software-properties-common python-software-properties -y
+       apt-get install -y language-pack-en-base
+       set LC_ALL=en_US.UTF-8; export LC_ALL=en_US.UTF-8
        gem install lolcat
        echo "Done." | lolcat -a -s 100;
        clear
@@ -84,34 +85,34 @@ R() {
        clear
        echo "Installing RAWS!..." | lolcat -a -s 100;
        cd /bin
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/bin/ubuntu/raws
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/bin/ubuntu/raws
        chmod +x raws
        cd /usr/local
        mkdir -p raws/ubuntu
        cd /usr/local/raws/ubuntu
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/rv
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/st.py
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/si
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/ahost
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/help
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/imysql
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/yt
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/bye
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/update
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/env
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/inode
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/inginx
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/nhost
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/vnc
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/iapache
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/adel
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/ndel
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/iapache-new
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/gen-ssl
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/ubuntu/isql
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/rv
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/st.py
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/si
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/ahost
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/help
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/imysql
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/yt
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/bye
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/update
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/env
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/inode
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/inginx
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/nhost
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/vnc
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/iapache
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/adel
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/ndel
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/iapache-new
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/gen-ssl
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/isql
        chmod +x *
        cd /usr/local/raws/
-       curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/usr/local/raws/check
+       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/check
        chmod +x check
        echo "Done." | lolcat -a -s 100;
        sleep 3
