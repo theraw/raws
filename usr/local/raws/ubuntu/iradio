@@ -79,11 +79,11 @@ inS() {
 reConF() {
         rm -Rf /etc/default/icecast2
         cd /etc/default/
-        curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/static/radio/icecast2
+        curl -s -O https://raw.githubusercontent.com/theraw/raws/master/static/radio/icecast2
 
         rm -Rf /etc/icecast2/icecast.xml
         cd /etc/icecast2/
-        curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/static/radio/icecast.xml
+        curl -s -O https://raw.githubusercontent.com/theraw/raws/master/static/radio/icecast.xml
 
         pws="`cat /root/passwordX.txt`"
         sed -i -e "s/REPW/$pws/g" /etc/icecast2/icecast.xml
