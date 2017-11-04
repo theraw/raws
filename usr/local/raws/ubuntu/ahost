@@ -10,6 +10,9 @@ if [ "$1" == "ahost" ] && [ "$2" ]; then
    mkdir -p /hostdata/$2
    mkdir -p /hostdata/$2/logs
    mkdir -p /hostdata/$2/public_html
+   # NEW FEATURE AUTOGEN SSL!
+   mkdir -p /hostdata/$2/NOSSL
+   # THE DIR "NOSSL/" WILL BE REMOVED AFTER SSL FOR THAT DOMAIN IS GENERATED!.
    echo "<html><h1><center>WELCOME!</center></h1></html>" >> /hostdata/$2/public_html/index.html
    echo "<html><h1><center>Not Found!</center></h1></html>" >> /hostdata/$2/public_html/404.html
    echo "ErrorDocument 404 /404.html" >> /hostdata/$2/public_html/.htaccess
