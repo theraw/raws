@@ -78,7 +78,7 @@ m='
 '
         echo "$m" >> /etc/apache2/apache2.conf
         cd /var/www/html; rm -Rf index.html
-        curl -s -O https://raw.githubusercontent.com/systemroot/raws-dev/master/static/apache/index.html
+        curl -s -O https://raw.githubusercontent.com/theraw/raws/master/static/apache/index.html
         echo -n "Creating Host Dir..." | lolcat -a -s 100; mkdir /hostdata && chmod -R 755 /hostdata/ >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
         echo -n "Enabling Rewrite ..." | lolcat -a -s 100; sudo a2enmod rewrite >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
         echo -n "Restarting Apache2..." | lolcat -a -s 100; service apache2 restart >> /tmp/out.txt; echo "Done." | lolcat -a -s 100;
