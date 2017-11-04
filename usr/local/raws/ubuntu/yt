@@ -48,7 +48,7 @@ hash -r
 apt-mark showauto | xargs sudo apt-get install
 rm -Rf ~/ytdl.sh
 cd /bin/
-wget https://raw.githubusercontent.com/systemroot/raws-dev/master/bin/ubuntu/down
+wget https://raw.githubusercontent.com/theraw/raws/master/bin/ubuntu/down
 chmod +x /bin/down
 clear
 echo "Work Done!"
