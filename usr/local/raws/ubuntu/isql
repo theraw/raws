@@ -7,9 +7,9 @@ mysql() {
 
 admin() {
         cd /hostdata/default/
-        wget https://files.phpmyadmin.net/phpMyAdmin/4.7.4/phpMyAdmin-4.7.4-all-languages.zip
-        unzip phpMyAdmin-4.7.4-all-languages.zip; rm -Rf phpMyAdmin-4.7.4-all-languages.zip
-        mv phpMyAdmin-4.7.4-all-languages/ phpmyadmin
+        wget https://files.phpmyadmin.net/phpMyAdmin/4.7.5/phpMyAdmin-4.7.5-all-languages.zip
+        unzip phpMyAdmin-4.7.5-all-languages.zip; rm -Rf phpMyAdmin-4.7.5-all-languages.zip
+        mv phpMyAdmin-4.7.5-all-languages/ phpmyadmin
         chown -R www-data:www-data phpmyadmin/
         chown -R www-data:www-data phpmyadmin/*
         cd /hostdata/default/phpmyadmin/sql/
@@ -25,7 +25,7 @@ admin() {
 }
 conf() {
 cd /hostdata/default/phpmyadmin/
-wget https://raw.githubusercontent.com/systemroot/raws-dev/master/static/nginx/phpmyadmin.cconf
+wget https://raw.githubusercontent.com/theraw/raws/master/static/nginx/phpmyadmin.cconf
 clear
 mv phpmyadmin.cconf /hostdata/default/phpmyadmin/config.inc.php
 
