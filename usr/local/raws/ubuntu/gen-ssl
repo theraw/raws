@@ -12,8 +12,29 @@ check() {
           exit 1
         fi
 }
+vIP() {
+IP=`curl -s api.ipify.org`
+        if grep -q "^${IP//./\.}$" < <(dig +short $1); then
+            exit 0
+        else
+            echo "The Domain $1 Doesn't Resolve your server ip ($IP)"
+            exit 1
+        fi
+        if grep -q "^${IP//./\.}$" < <(dig +short www.$1); then
+            exit 0
+        else
+            echo "The RECORD www.$1 Doesn't Resolve your server ip ($IP)"
+            exit 1
+        fi
+}
 
 genit() {
+        echo -e "|======================|" | lolcat -a -s 100;
+        echo -e "| ROOT CHECK      : OK |"
+        echo -e "| DOMAIN IP CHECK : OK |"
+        echo -e "|======================|" | lolcat -a -s 100;
+        echo -e "Sleeping for 5sec and generating ssl!"
+        sleep 5
         service nginx stop
         service apache2 stop
         /ssl/letsencrypt/letsencrypt-auto certonly --standalone -d $1 -d www.$1
@@ -24,11 +45,11 @@ genit() {
 }
 
 if [ "$1" == 'gen-ssl' ] && [ "$2" ]; then
-      check $2; genit $2;
+      check $2; vIP $2; genit $2;
       clear
       echo -e "Certificate Is Generated And Stored At" | lolcat -a -s 100;
       echo -e "/hostdata/$2/ssl/fullchain.pem" | lolcat -a -s 100;
       echo -e "/hostdata/$2/ssl/privkey.pem" | lolcat -a -s 100;
       echo -e "As symlink. Real path is at /etc/letsencrypt/archive/$2/" | lolcat -a -s 100;
-      echo -e "Use your crt and privkey in vhost conf and start your webserver!" | lolcat -a -s 100;
+      echo -e "You can add ssl to your vhost config file and restart webserver !" | lolcat -a -s 100;
 fi
