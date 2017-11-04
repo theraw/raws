@@ -2,6 +2,7 @@
 
 # RAWS - SIMPLE LINUX CLI HELPER!
 # https://github.com/systemroot/raws-dev
+# Short link of this http://bit.ly/rawsINS
 
 #Removing if is already installed.
 rV() {
