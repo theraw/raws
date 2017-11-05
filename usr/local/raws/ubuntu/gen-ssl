@@ -17,13 +17,13 @@ vIP() {
 #IP=123.123.123.123
 IP=`curl -s api.ipify.org`
         if grep -q "^${IP//./\.}$" < <(dig +short $1); then
-            exit 0
+            echo ""
         else
             echo "The Domain $1 Doesn't Resolve your server ip ($IP)"
             exit 1
         fi
         if grep -q "^${IP//./\.}$" < <(dig +short www.$1); then
-            exit 0
+            echo ""
         else
             echo "The RECORD www.$1 Doesn't Resolve your server ip ($IP)"
             exit 1
