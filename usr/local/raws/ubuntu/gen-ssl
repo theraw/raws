@@ -13,6 +13,8 @@ check() {
         fi
 }
 vIP() {
+# If you don't have a static ip and you are behind nat wrote your ip here and remove IP=`curl -s api.ipify.org` ex
+#IP=123.123.123.123
 IP=`curl -s api.ipify.org`
         if grep -q "^${IP//./\.}$" < <(dig +short $1); then
             exit 0
