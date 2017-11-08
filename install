@@ -1,9 +1,26 @@
 #!/bin/bash
+# |============================================================|
+# ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+# |============================================================|
+# | RAWS - SIMPLE LINUX CLI HELPER!
+# | https://github.com/theraw/raws
+# |============================================================|
+# ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+# |============================================================|
+# | LOAD "STORE".
+source="`curl -s https://raw.githubusercontent.com/theraw/source/master/source`"
+sourceUser="`curl -s https://raw.githubusercontent.com/theraw/source/master/sourceUser`"
+Project="raws"
+export SOURCE=$source
+export SOURCEUSER=$sourceUser
+export PROJECT=$Project
+# |============================================================|
+# ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+# |============================================================|
 
-# RAWS - SIMPLE LINUX CLI HELPER!
-# https://github.com/theraw/raws
-
-#Removing if is already installed.
+# |============================================================|
+# | Removing if is already installed.                          |
+# |============================================================|
 rV() {
        if [ -d "/usr/local/raws" ]; then
           echo "Raws already installed detected!" | lolcat -a -s 100;
@@ -15,8 +32,9 @@ rV() {
           clear
        fi
 }
-
-#Check if we're root.
+# |============================================================|
+# | Check if we're root.                                       |
+# |============================================================|
 rT() {
        if [ "$(whoami)" != "root" ]
        then
@@ -24,9 +42,12 @@ rT() {
            exit 1
        fi
 }
+# ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+# |============================================================|
 
-
-#Updating System.
+# |============================================================|
+# | Updating System.                                           |
+# |============================================================|
 uP() {
        echo "Updating System!..."
        apt-get update -y
@@ -40,8 +61,12 @@ uP() {
        echo "Done."
        sleep 3
 }
+# ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+# |============================================================|
 
-#Checking OS.
+# |============================================================|
+# | Checking OS.                                               |
+# |============================================================|
 OS() {
        if [ "$(grep DISTRIB_CODENAME /etc/*-release | awk -F '=' '{print $2}')" != "trusty" ]
        then
@@ -51,8 +76,12 @@ OS() {
            exit 1
        fi
 }
+# ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+# |============================================================|
 
-#Installing needed packs.
+# |============================================================|
+# | Installing needed packs.                                   |
+# |============================================================|
 deP() {
        echo "Installing Needed Packs!..."
        sleep 5
@@ -66,8 +95,12 @@ deP() {
        echo "Done." | lolcat -a -s 100;
        sleep 3
 }
+# ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+# |============================================================|
 
-# Installing LetsEncrypt in case if is needed.
+# |============================================================|
+# | Installing LetsEncrypt in case if is needed.               |
+# |============================================================|
 ssl() {
        mkdir /ssl
        apt-get install openssl -y
@@ -79,8 +112,12 @@ ssl() {
        openssl dhparam -out /ssl/dh2048.pem -outform PEM -2 2048
        clear
 }
+# ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+# |============================================================|
 
-#Installing Raws.
+# |============================================================|
+# | Installing Raws.                                           |
+# |============================================================|
 R() {
        clear
        echo "Installing RAWS!..." | lolcat -a -s 100;
@@ -90,42 +127,46 @@ R() {
        cd /usr/local
        mkdir -p raws/ubuntu
        cd /usr/local/raws/ubuntu
-       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/rv
-       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/st.py
-       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/si
-       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/ahost
-       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/help
-       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/imysql
-       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/yt
-       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/bye
-       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/update
-       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/env
-       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/inode
-       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/inginx
-       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/nhost
-       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/vnc
-       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/iapache
-       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/adel
-       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/ndel
-       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/iapache-new
-       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/gen-ssl
-       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/ubuntu/isql
+       curl -s -O https://$source/$sourceUser/$Project/usr/local/raws/ubuntu/rv
+       curl -s -O https://$source/$sourceUser/$Project/usr/local/raws/ubuntu/st.py
+       curl -s -O https://$source/$sourceUser/$Project/usr/local/raws/ubuntu/si
+       curl -s -O https://$source/$sourceUser/$Project/usr/local/raws/ubuntu/ahost
+       curl -s -O https://$source/$sourceUser/$Project/usr/local/raws/ubuntu/help
+       curl -s -O https://$source/$sourceUser/$Project/usr/local/raws/ubuntu/imysql
+       curl -s -O https://$source/$sourceUser/$Project/usr/local/raws/ubuntu/yt
+       curl -s -O https://$source/$sourceUser/$Project/usr/local/raws/ubuntu/bye
+       curl -s -O https://$source/$sourceUser/$Project/usr/local/raws/ubuntu/update
+       curl -s -O https://$source/$sourceUser/$Project/usr/local/raws/ubuntu/env
+       curl -s -O https://$source/$sourceUser/$Project/usr/local/raws/ubuntu/inode
+       curl -s -O https://$source/$sourceUser/$Project/usr/local/raws/ubuntu/inginx
+       curl -s -O https://$source/$sourceUser/$Project/usr/local/raws/ubuntu/nhost
+       curl -s -O https://$source/$sourceUser/$Project/usr/local/raws/ubuntu/vnc
+       curl -s -O https://$source/$sourceUser/$Project/usr/local/raws/ubuntu/iapache
+       curl -s -O https://$source/$sourceUser/$Project/usr/local/raws/ubuntu/adel
+       curl -s -O https://$source/$sourceUser/$Project/usr/local/raws/ubuntu/ndel
+       curl -s -O https://$source/$sourceUser/$Project/usr/local/raws/ubuntu/iapache-new
+       curl -s -O https://$source/$sourceUser/$Project/usr/local/raws/ubuntu/gen-ssl
+       curl -s -O https://$source/$sourceUser/$Project/usr/local/raws/ubuntu/isql
        chmod +x *
        cd /usr/local/raws/
-       curl -s -O https://raw.githubusercontent.com/theraw/raws/master/usr/local/raws/check
+       curl -s -O https://$source/$sourceUser/$Project/usr/local/raws/check
        chmod +x check
        echo "Done." | lolcat -a -s 100;
        sleep 3
        clear
        raws -v
 }
+# ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+# |============================================================|
 
-
-# Then Start!
+# |============================================================|
+# | Then Start!                                                |
+# |============================================================|
 if [ "$1" == 'INSTALL' ]; then
         rV; rT; uP; OS; deP; ssl; R;
    else
-        echo "Dear Mr. IDIOT."
-        echo "Please Use The Fucking Command As iT iS On Github.!"
+        echo "Please Use The Command As iT iS On Github.!"
         echo "Bye."
 fi
+# ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+# |============================================================|
