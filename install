@@ -103,15 +103,21 @@ deP() {
 # | Installing LetsEncrypt in case if is needed.               |
 # |============================================================|
 ssl() {
-       mkdir /ssl
-       apt-get install openssl -y
-       git clone https://github.com/letsencrypt/letsencrypt
-       mv letsencrypt /ssl
-       cd /ssl/letsencrypt
-       ./letsencrypt-auto --help
-       ./certbot-auto --help
-       openssl dhparam -out /ssl/dh2048.pem -outform PEM -2 2048
-       clear
+       # In case of update!
+       if [ -e /ssl/dh2048.pem ]
+       then
+           echo "DHPARAM ALREADY GENERATED!"
+       else
+           mkdir /ssl
+           apt-get install openssl -y
+           git clone https://github.com/letsencrypt/letsencrypt
+           mv letsencrypt /ssl
+           cd /ssl/letsencrypt
+           ./letsencrypt-auto --help
+           ./certbot-auto --help
+           openssl dhparam -out /ssl/dh2048.pem -outform PEM -2 2048
+           clear
+       fi
 }
 # ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 # |============================================================|
