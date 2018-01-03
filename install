@@ -8,13 +8,13 @@
 # ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 # |============================================================|
 # | LOAD "STORE".
-source="`curl -s https://raw.githubusercontent.com/theraw/source/master/source`"
-sourceUser="`curl -s https://raw.githubusercontent.com/theraw/source/master/sourceUser`"
-Project="raws"
-export SOURCE=$source
-export SOURCEUSER=$sourceUser
-export PROJECT=$Project
-export GET=$source/$sourceUser/$Project
+# source="`curl -s https://raw.githubusercontent.com/theraw/source/master/source`"
+# sourceUser="`curl -s https://raw.githubusercontent.com/theraw/source/master/sourceUser`"
+# Project="raws"
+# export SOURCE=$source
+# export SOURCEUSER=$sourceUser
+# export PROJECT=$Project
+export GET="raw.githubusercontent.com/theraw/raws/master"
 # |============================================================|
 # ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 # |============================================================|
@@ -115,7 +115,8 @@ ssl() {
            cd /ssl/letsencrypt
            ./letsencrypt-auto --help
            ./certbot-auto --help
-           openssl dhparam -out /ssl/dh2048.pem -outform PEM -2 2048
+           #openssl dhparam -out /ssl/dh2048.pem -outform PEM -2 2048
+           wget https://$GET/static/dh2048.pem
            clear
        fi
 }
