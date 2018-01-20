@@ -4,10 +4,7 @@ First. Raws, is a simple Linux cli helper. Those are some simple scripts which c
 
 * **`curl -s -LA "Raws InS" "https://bit.ly/rawsINS" | bash -s INSTALL`**
 
-* **SUPPORTED OS:** `Ubuntu 14.04, Zorin OS.`
-
-* **`On first installation this will take some time. Because raws generate a 2048 Dhparam key, Why?`**
-**`It's better to generate one on begin so we can copy that everytime when you generate a ssl cert.`**
+* **SUPPORTED OS:** `Ubuntu 14.04`
 
 ![](http://image.prntscr.com/image/931009a8a11543a8bd8c5c1a7a755dc9.png)
 
