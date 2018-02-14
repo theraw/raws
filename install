@@ -86,7 +86,7 @@ OS() {
 deP() {
        echo "Installing Needed Packs!..."
        sleep 5
-       apt-get install build-essential bc systemd-services lshw ruby git nano curl zip unzip python -y
+       apt-get install build-essential bc systemd-services lshw ruby git nano curl zip unzip python sudo -y
        apt-get install software-properties-common python-software-properties -y
        apt-get install -y language-pack-en-base
        set LC_ALL=en_US.UTF-8; export LC_ALL=en_US.UTF-8
