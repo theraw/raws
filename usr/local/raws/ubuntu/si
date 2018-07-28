@@ -30,7 +30,7 @@ echo -e "|*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*|" | lolcat -a -s 100
 echo -e "|**********| You Are Using.      |**********|" | lolcat -a -s 100
 echo -e "|**********| $distro. |**********|" | lolcat -a -s 100
 echo -e "|**********| $x.             |**********|" | lolcat -a -s 100
-echo -e "|**********| With  : $cpu CPU/s.    |**********|" | lolcat -a -s 100
+echo -e "|**********| With  : $cpu CORE/s.    |*********|" | lolcat -a -s 100
 echo -e "|**********| Clock : $ck    |**********|" | lolcat -a -s 100
 echo -e "|**********| RAM   : $ram MB.  |**********|" | lolcat -a -s 100
 echo -e "|**********| $virt |*******|" | lolcat -a -s 100
